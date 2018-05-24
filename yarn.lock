@@ -69,10 +69,6 @@
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/@trodi/electron-splashscreen/-/electron-splashscreen-0.3.1.tgz#7e454644ee3017ef012ba1e18977c96bc0c5b70a"
 
-"@types/node@*":
-  version "10.1.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.1.2.tgz#1b928a0baa408fc8ae3ac012cc81375addc147c6"
-
 "@types/node@^7.0.12":
   version "7.0.64"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.64.tgz#8d5fc50e0944437e48e8aef4ab09910ec8661eee"
@@ -523,10 +519,6 @@ autoprefixer@^6.3.1:
     num2fraction "^1.2.2"
     postcss "^5.2.16"
     postcss-value-parser "^3.2.3"
-
-autosize@^3.0.15:
-  version "3.0.21"
-  resolved "https://registry.yarnpkg.com/autosize/-/autosize-3.0.21.tgz#f182f40d17757d978a139a4c9ca40c4c0e448603"
 
 autosize@^4.0.0:
   version "4.0.2"
@@ -1239,10 +1231,6 @@ big.js@^3.1.3:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/big.js/-/big.js-3.2.0.tgz#a5fc298b81b9e0dca2e458824784b65c52ba588e"
 
-big.js@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/big.js/-/big.js-5.0.3.tgz#9679fb0a3599a7d3df397f855e89c4dba016960e"
-
 binary@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/binary/-/binary-0.3.0.tgz#9f60553bc5ce8c3386f3b553cff47462adecaa79"
@@ -1456,10 +1444,6 @@ camelcase@^4.0.0, camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
-can-use-dom@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/can-use-dom/-/can-use-dom-0.1.0.tgz#22cc4a34a0abc43950f42c6411024a3f6366b45a"
-
 caniuse-api@^1.5.2:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/caniuse-api/-/caniuse-api-1.6.1.tgz#b534e7c734c4f81ec5fbe8aca2ad24354b962c6c"
@@ -1547,38 +1531,6 @@ cheerio@^0.20.0:
   optionalDependencies:
     jsdom "^7.0.2"
 
-cheerio@^0.22.0:
-  version "0.22.0"
-  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-0.22.0.tgz#a9baa860a3f9b595a6b81b1a86873121ed3a269e"
-  dependencies:
-    css-select "~1.2.0"
-    dom-serializer "~0.1.0"
-    entities "~1.1.1"
-    htmlparser2 "^3.9.1"
-    lodash.assignin "^4.0.9"
-    lodash.bind "^4.1.4"
-    lodash.defaults "^4.0.1"
-    lodash.filter "^4.4.0"
-    lodash.flatten "^4.2.0"
-    lodash.foreach "^4.3.0"
-    lodash.map "^4.4.0"
-    lodash.merge "^4.4.0"
-    lodash.pick "^4.2.1"
-    lodash.reduce "^4.4.0"
-    lodash.reject "^4.4.0"
-    lodash.some "^4.4.0"
-
-cheerio@^1.0.0-rc.2:
-  version "1.0.0-rc.2"
-  resolved "https://registry.yarnpkg.com/cheerio/-/cheerio-1.0.0-rc.2.tgz#4b9f53a81b27e4d5dac31c0ffd0cfa03cc6830db"
-  dependencies:
-    css-select "~1.2.0"
-    dom-serializer "~0.1.0"
-    entities "~1.1.1"
-    htmlparser2 "^3.9.1"
-    lodash "^4.15.0"
-    parse5 "^3.0.1"
-
 chromium-pickle-js@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/chromium-pickle-js/-/chromium-pickle-js-0.1.0.tgz#1d48b107d82126a2f3e211c2ea25f803ba551b21"
@@ -1601,7 +1553,7 @@ clap@^1.0.9:
   dependencies:
     chalk "^1.1.3"
 
-classnames@2.x, classnames@^2.1.2, classnames@^2.1.5, classnames@^2.2.0, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@~2.2.0:
+classnames@2.x, classnames@^2.2.0, classnames@^2.2.1, classnames@^2.2.3, classnames@^2.2.5, classnames@~2.2.0:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.5.tgz#fb3801d453467649ef3603c7d61a02bd129bde6d"
 
@@ -1724,10 +1676,6 @@ colormin@^1.0.5:
     color "^0.11.0"
     css-color-names "0.0.4"
     has "^1.0.1"
-
-colors@0.5.x:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/colors/-/colors-0.5.1.tgz#7d0023eaeb154e8ee9fce75dcb923d0ed1667774"
 
 colors@^1.1.2:
   version "1.2.5"
@@ -1965,17 +1913,11 @@ cson@^3.0.2:
     requirefresh "^2.0.0"
     safefs "^4.0.0"
 
-css-animation@1.x, css-animation@^1.2.5, css-animation@^1.3.0, css-animation@^1.3.2:
+css-animation@1.x, css-animation@^1.2.5, css-animation@^1.3.2:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/css-animation/-/css-animation-1.4.1.tgz#5b8813125de0fbbbb0bbe1b472ae84221469b7a8"
   dependencies:
     babel-runtime "6.x"
-    component-classes "^1.2.5"
-
-css-animation@~1.2.5:
-  version "1.2.6"
-  resolved "https://registry.yarnpkg.com/css-animation/-/css-animation-1.2.6.tgz#dc648cde54fcf9b236f112684ccef71f5cff53f4"
-  dependencies:
     component-classes "^1.2.5"
 
 css-color-keywords@^1.0.0:
@@ -2146,10 +2088,6 @@ decompress-zip@0.3.0:
     readable-stream "^1.1.8"
     touch "0.0.3"
 
-deep-equal@~1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/deep-equal/-/deep-equal-1.0.1.tgz#f5d260292b660e084eff4cdbc9f08ad3247448b5"
-
 deep-extend@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.5.1.tgz#b894a9dd90d3023fbf1c55a394fb858eb2066f1f"
@@ -2233,10 +2171,6 @@ detective-stylus@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/detective-stylus/-/detective-stylus-1.0.0.tgz#50aee7db8babb990381f010c63fabba5b58e54cd"
 
-discontinuous-range@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/discontinuous-range/-/discontinuous-range-1.0.0.tgz#e38331f0844bba49b9a9cb71c771585aab1bc65a"
-
 dmg-builder@4.1.8:
   version "4.1.8"
   resolved "https://registry.yarnpkg.com/dmg-builder/-/dmg-builder-4.1.8.tgz#365048a4abf3f4e9a4d8fb0331ce7ba13458f4bd"
@@ -2296,7 +2230,7 @@ dom-walk@^0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.1.tgz#672226dc74c8f799ad35307df936aba11acd6018"
 
-domelementtype@1, domelementtype@^1.3.0:
+domelementtype@1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-1.3.0.tgz#b17aed82e8ab59e52dd9c19b1756e0fc187204c2"
 
@@ -2310,22 +2244,9 @@ domhandler@2.3:
   dependencies:
     domelementtype "1"
 
-domhandler@^2.3.0:
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/domhandler/-/domhandler-2.4.2.tgz#8805097e933d65e85546f726d60f5eb88b44f803"
-  dependencies:
-    domelementtype "1"
-
 domutils@1.5, domutils@1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.5.1.tgz#dcd8488a26f563d61079e48c9f7b7e32373682cf"
-  dependencies:
-    dom-serializer "0"
-    domelementtype "1"
-
-domutils@^1.5.1:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/domutils/-/domutils-1.7.0.tgz#56ea341e834e06e6748af7a1cb25da67ea9f8c2a"
   dependencies:
     dom-serializer "0"
     domelementtype "1"
@@ -2860,49 +2781,13 @@ entities@1.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.0.0.tgz#b2987aa3821347fcde642b24fdfc9e4fb712bf26"
 
-entities@^1.1.1, entities@~1.1.1:
+entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
 env-paths@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/env-paths/-/env-paths-1.0.0.tgz#4168133b42bb05c38a35b1ae4397c8298ab369e0"
-
-enzyme@^2.8.1:
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/enzyme/-/enzyme-2.9.1.tgz#07d5ce691241240fb817bf2c4b18d6e530240df6"
-  dependencies:
-    cheerio "^0.22.0"
-    function.prototype.name "^1.0.0"
-    is-subset "^0.1.1"
-    lodash "^4.17.4"
-    object-is "^1.0.1"
-    object.assign "^4.0.4"
-    object.entries "^1.0.4"
-    object.values "^1.0.4"
-    prop-types "^15.5.10"
-    uuid "^3.0.1"
-
-enzyme@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/enzyme/-/enzyme-3.3.0.tgz#0971abd167f2d4bf3f5bd508229e1c4b6dc50479"
-  dependencies:
-    cheerio "^1.0.0-rc.2"
-    function.prototype.name "^1.0.3"
-    has "^1.0.1"
-    is-boolean-object "^1.0.0"
-    is-callable "^1.1.3"
-    is-number-object "^1.0.3"
-    is-string "^1.0.4"
-    is-subset "^0.1.1"
-    lodash "^4.17.4"
-    object-inspect "^1.5.0"
-    object-is "^1.0.1"
-    object.assign "^4.1.0"
-    object.entries "^1.0.4"
-    object.values "^1.0.4"
-    raf "^3.4.0"
-    rst-selector-parser "^2.2.3"
 
 errno@^0.1.1:
   version "0.1.7"
@@ -2916,7 +2801,7 @@ error-ex@^1.2.0:
   dependencies:
     is-arrayish "^0.2.1"
 
-es-abstract@^1.6.1, es-abstract@^1.7.0:
+es-abstract@^1.7.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.11.0.tgz#cce87d518f0496893b1a30cd8461835535480681"
   dependencies:
@@ -2941,10 +2826,6 @@ es5-ext@^0.10.14, es5-ext@^0.10.35, es5-ext@^0.10.9, es5-ext@~0.10.14:
     es6-iterator "~2.0.3"
     es6-symbol "~3.1.1"
     next-tick "1"
-
-es5-shim@^4.5.10:
-  version "4.5.10"
-  resolved "https://registry.yarnpkg.com/es5-shim/-/es5-shim-4.5.10.tgz#b7e17ef4df2a145b821f1497b50c25cf94026205"
 
 es6-error@4.0.x:
   version "4.0.2"
@@ -3538,17 +3419,9 @@ fstream@^1.0.0, fstream@^1.0.2:
     mkdirp ">=0.5 0"
     rimraf "2"
 
-function-bind@^1.0.2, function-bind@^1.1.0, function-bind@^1.1.1:
+function-bind@^1.0.2, function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
-
-function.prototype.name@^1.0.0, function.prototype.name@^1.0.3:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/function.prototype.name/-/function.prototype.name-1.1.0.tgz#8bd763cc0af860a859cc5d49384d74b932cd2327"
-  dependencies:
-    define-properties "^1.1.2"
-    function-bind "^1.1.1"
-    is-callable "^1.1.3"
 
 gar@^1.0.2:
   version "1.0.3"
@@ -3818,10 +3691,6 @@ has-flag@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
 
-has-symbols@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/has-symbols/-/has-symbols-1.0.0.tgz#ba1a8f1af2a0fc39650f5c850367704122063b44"
-
 has-unicode@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/has-unicode/-/has-unicode-2.0.1.tgz#e0e6fe6a28cf51138855e086d1691e771de2a8b9"
@@ -3899,17 +3768,6 @@ html-comment-regex@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/html-comment-regex/-/html-comment-regex-1.1.1.tgz#668b93776eaae55ebde8f3ad464b307a4963625e"
 
-htmlparser2@^3.9.1:
-  version "3.9.2"
-  resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.9.2.tgz#1bdf87acca0f3f9e53fa4fcceb0f4b4cbb00b338"
-  dependencies:
-    domelementtype "^1.3.0"
-    domhandler "^2.3.0"
-    domutils "^1.5.1"
-    entities "^1.1.1"
-    inherits "^2.0.1"
-    readable-stream "^2.0.2"
-
 htmlparser2@~3.8.1:
   version "3.8.3"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.8.3.tgz#996c28b191516a8be86501a7d79757e5c70c1068"
@@ -3972,10 +3830,6 @@ image-size@^0.5.0, image-size@~0.5.0:
   version "0.5.5"
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
 
-immediate@~3.0.5:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
-
 immutable@^3.7.4:
   version "3.8.2"
   resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
@@ -4013,7 +3867,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.0, inherits@~2.0.1, inherits@~2.0.3:
+inherits@2, inherits@^2.0.3, inherits@~2.0.0, inherits@~2.0.1, inherits@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.3.tgz#633c2c83e3da42a502f52466022480f4208261de"
 
@@ -4117,10 +3971,6 @@ is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
 
-is-boolean-object@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/is-boolean-object/-/is-boolean-object-1.0.0.tgz#98f8b28030684219a95f375cfbd88ce3405dff93"
-
 is-buffer@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
@@ -4190,10 +4040,6 @@ is-npm@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-npm/-/is-npm-1.0.0.tgz#f2fb63a65e4905b406c86072765a1a4dc793b9f4"
 
-is-number-object@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/is-number-object/-/is-number-object-1.0.3.tgz#f265ab89a9f445034ef6aff15a8f00b00f551799"
-
 is-obj@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
@@ -4261,14 +4107,6 @@ is-retry-allowed@^1.0.0:
 is-stream@^1.0.0, is-stream@^1.0.1, is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
-
-is-string@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/is-string/-/is-string-1.0.4.tgz#cc3a9b69857d621e963725a24caeec873b826e64"
-
-is-subset@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/is-subset/-/is-subset-0.1.1.tgz#8a59117d932de1de00f245fcdd39ce43f1e939a6"
 
 is-svg@^2.0.0:
   version "2.1.0"
@@ -4543,10 +4381,6 @@ klaw@^2.1.0:
   dependencies:
     graceful-fs "^4.1.9"
 
-kuma-base@^1.10.0:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/kuma-base/-/kuma-base-1.13.0.tgz#5ae21c3883ad15727f98070ce3572baceac287cb"
-
 latest-version@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/latest-version/-/latest-version-3.1.0.tgz#a205383fea322b33b5ae3b18abee0dc2f356ee15"
@@ -4592,12 +4426,6 @@ levn@^0.3.0, levn@~0.3.0:
   dependencies:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
-
-lie@^3.1.0, lie@^3.1.1:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/lie/-/lie-3.3.0.tgz#dcf82dee545f46074daf200c7c1c5a08e0f40f6a"
-  dependencies:
-    immediate "~3.0.5"
 
 line-height@^0.1.1:
   version "0.1.1"
@@ -4651,23 +4479,11 @@ lodash.assign@^4.0.3, lodash.assign@^4.0.6, lodash.assign@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
 
-lodash.assignin@^4.0.9:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/lodash.assignin/-/lodash.assignin-4.2.0.tgz#ba8df5fb841eb0a3e8044232b0e263a8dc6a28a2"
-
-lodash.bind@^4.1.4:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/lodash.bind/-/lodash.bind-4.2.1.tgz#7ae3017e939622ac31b7d7d7dcb1b34db1690d35"
-
-lodash.clonedeep@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
-
 lodash.debounce@^4.0.0, lodash.debounce@^4.0.8:
   version "4.0.8"
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
 
-lodash.defaults@^4.0.1, lodash.defaults@^4.2.0:
+lodash.defaults@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
 
@@ -4675,21 +4491,9 @@ lodash.difference@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.difference/-/lodash.difference-4.5.0.tgz#9ccb4e505d486b91651345772885a2df27fd017c"
 
-lodash.filter@^4.4.0, lodash.filter@^4.6.0:
+lodash.filter@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.filter/-/lodash.filter-4.6.0.tgz#668b1d4981603ae1cc5a6fa760143e480b4c4ace"
-
-lodash.flatten@^4.2.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
-
-lodash.flattendeep@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.flattendeep/-/lodash.flattendeep-4.4.0.tgz#fb030917f86a3134e5bc9bec0d69e0013ddfedb2"
-
-lodash.foreach@^4.3.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.foreach/-/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
 
 lodash.get@^4.0.0:
   version "4.4.2"
@@ -4703,10 +4507,6 @@ lodash.isarray@^3.0.0:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/lodash.isarray/-/lodash.isarray-3.0.4.tgz#79e4eb88c36a8122af86f844aa9bcd851b5fbb55"
 
-lodash.isequal@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
-
 lodash.keys@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/lodash.keys/-/lodash.keys-3.1.2.tgz#4dbc0472b156be50a0b286855d1bd0b0c656098a"
@@ -4715,15 +4515,11 @@ lodash.keys@^3.1.2:
     lodash.isarguments "^3.0.0"
     lodash.isarray "^3.0.0"
 
-lodash.map@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
-
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
-lodash.merge@^4.4.0, lodash.merge@^4.6.0:
+lodash.merge@^4.6.0:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.1.tgz#adc25d9cb99b9391c59624f379fbba60d7111d54"
 
@@ -4739,25 +4535,9 @@ lodash.padstart@^4.1.0:
   version "4.6.1"
   resolved "https://registry.yarnpkg.com/lodash.padstart/-/lodash.padstart-4.6.1.tgz#d2e3eebff0d9d39ad50f5cbd1b52a7bce6bb611b"
 
-lodash.pick@^4.2.1:
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/lodash.pick/-/lodash.pick-4.4.0.tgz#52f05610fff9ded422611441ed1fc123a03001b3"
-
 lodash.pull@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/lodash.pull/-/lodash.pull-4.1.0.tgz#60060cc6bd625b4d4567ec27dc45cd1be9eec012"
-
-lodash.reduce@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.reduce/-/lodash.reduce-4.6.0.tgz#f1ab6b839299ad48f784abbf476596f03b914d3b"
-
-lodash.reject@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.reject/-/lodash.reject-4.6.0.tgz#80d6492dc1470864bbf583533b651f42a9f52415"
-
-lodash.some@^4.4.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.some/-/lodash.some-4.6.0.tgz#1bb9f314ef6b8baded13b549169b2a945eb68e4d"
 
 lodash.template@^4.2.2, lodash.template@^4.4.0:
   version "4.4.0"
@@ -4780,9 +4560,13 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@4, lodash@^4.0.0, lodash@^4.1.0, lodash@^4.13.0, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.16.2, lodash@^4.16.4, lodash@^4.16.5, lodash@^4.16.6, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@^4.3.0:
+lodash@4, lodash@^4.0.0, lodash@^4.1.0, lodash@^4.13.0, lodash@^4.14.0, lodash@^4.16.2, lodash@^4.16.4, lodash@^4.16.5, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.1, lodash@^4.3.0:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+
+lodash@4.1.x:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.1.0.tgz#299894283de01a9eefbedff4c4b9b00a6a2e6e96"
 
 lodash@~2.4.1:
   version "2.4.2"
@@ -4989,7 +4773,7 @@ mobx@^4.2.0:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/mobx/-/mobx-4.2.1.tgz#dd4190daf1b43d41a3a228585253f9970b0a27dd"
 
-moment@2.x, moment@^2.17.1, moment@^2.19.3, moment@^2.22.0:
+moment@2.x, moment@^2.19.3:
   version "2.22.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.22.1.tgz#529a2e9bf973f259c9643d237fda84de3a26e8ad"
 
@@ -5039,38 +4823,9 @@ natives@^1.1.0:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/natives/-/natives-1.1.3.tgz#44a579be64507ea2d6ed1ca04a9415915cf75558"
 
-natty-fetch@^2.1.2:
-  version "2.5.5"
-  resolved "https://registry.yarnpkg.com/natty-fetch/-/natty-fetch-2.5.5.tgz#bbe693fde8876cdedd5d37bcb8e71d8f09be0cb8"
-  dependencies:
-    natty-storage "^2.0.1"
-
-natty-fetch@~2.1.1:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/natty-fetch/-/natty-fetch-2.1.3.tgz#f4c221d34f6629f96430d67c159a2e1187566e9a"
-  dependencies:
-    natty-storage "^1.1.1"
-
-natty-storage@^1.1.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/natty-storage/-/natty-storage-1.1.2.tgz#833598d653367d7dcb6c33973f2855ea4c9bb0e1"
-
-natty-storage@^2.0.1:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/natty-storage/-/natty-storage-2.2.0.tgz#2739a0aa098f844fd35974510c9d0e63b0ca963e"
-
 natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
-
-nearley@^2.7.10:
-  version "2.13.0"
-  resolved "https://registry.yarnpkg.com/nearley/-/nearley-2.13.0.tgz#6e7b0f4e68bfc3e74c99eaef2eda39e513143439"
-  dependencies:
-    nomnom "~1.6.2"
-    railroad-diagrams "^1.0.0"
-    randexp "0.4.6"
-    semver "^5.4.1"
 
 nested-error-stacks@^1.0.1:
   version "1.0.2"
@@ -5135,13 +4890,6 @@ nodeify@^1.0.1:
   dependencies:
     is-promise "~1.0.0"
     promise "~1.3.0"
-
-nomnom@~1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/nomnom/-/nomnom-1.6.2.tgz#84a66a260174408fc5b77a18f888eccc44fb6971"
-  dependencies:
-    colors "0.5.x"
-    underscore "~1.4.4"
 
 "nopt@2 || 3", nopt@3.x, nopt@^3.0.1:
   version "3.0.6"
@@ -5240,60 +4988,17 @@ oauth-sign@~0.8.1, oauth-sign@~0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/oauth-sign/-/oauth-sign-0.8.2.tgz#46a6ab7f0aead8deae9ec0565780b7d4efeb9d43"
 
-object-assign@4.x, object-assign@^4.0.0, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1, object-assign@~4.1.0:
+object-assign@4.x, object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
-object-assign@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-2.1.1.tgz#43c36e5d569ff8e4816c4efa8be02d26967c18aa"
-
-object-assign@~4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.0.1.tgz#99504456c3598b5cad4fc59c26e8a9bb107fe0bd"
-
-object-inspect@^1.5.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/object-inspect/-/object-inspect-1.6.0.tgz#c70b6cbf72f274aab4c34c0c82f5167bf82cf15b"
-
-object-is@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/object-is/-/object-is-1.0.1.tgz#0aa60ec9989a0b3ed795cf4d06f62cf1ad6539b6"
-
-object-keys@^1.0.11, object-keys@^1.0.8:
+object-keys@^1.0.8:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
 
 object-keys@~0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-0.4.0.tgz#28a6aae7428dd2c3a92f3d95f21335dd204e0336"
-
-object.assign@^4.0.4, object.assign@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.1.0.tgz#968bf1100d7956bb3ca086f006f846b3bc4008da"
-  dependencies:
-    define-properties "^1.1.2"
-    function-bind "^1.1.1"
-    has-symbols "^1.0.0"
-    object-keys "^1.0.11"
-
-object.entries@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/object.entries/-/object.entries-1.0.4.tgz#1bf9a4dd2288f5b33f3a993d257661f05d161a5f"
-  dependencies:
-    define-properties "^1.1.2"
-    es-abstract "^1.6.1"
-    function-bind "^1.1.0"
-    has "^1.0.1"
-
-object.values@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/object.values/-/object.values-1.0.4.tgz#e524da09b4f66ff05df457546ec72ac99f13069a"
-  dependencies:
-    define-properties "^1.1.2"
-    es-abstract "^1.6.1"
-    function-bind "^1.1.0"
-    has "^1.0.1"
 
 omit.js@^1.0.0:
   version "1.0.0"
@@ -5454,12 +5159,6 @@ parse-passwd@^1.0.0:
 parse5@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-1.5.1.tgz#9b7f3b0de32be78dc2401b17573ccaf0f6f59d94"
-
-parse5@^3.0.1:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/parse5/-/parse5-3.0.3.tgz#042f792ffdd36851551cf4e9e066b3874ab45b5c"
-  dependencies:
-    "@types/node" "*"
 
 path-exists@^2.0.0, path-exists@^2.1.0:
   version "2.1.0"
@@ -5917,22 +5616,11 @@ raf-schd@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/raf-schd/-/raf-schd-2.1.2.tgz#ec622b5167f2912089f054dc03ebd5bcf33c8f62"
 
-raf@^3.1.0, raf@^3.3.2, raf@^3.4.0:
+raf@^3.1.0, raf@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/raf/-/raf-3.4.0.tgz#a28876881b4bc2ca9117d4138163ddb80f781575"
   dependencies:
     performance-now "^2.1.0"
-
-railroad-diagrams@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/railroad-diagrams/-/railroad-diagrams-1.0.0.tgz#eb7e6267548ddedfb899c1b90e57374559cddb7e"
-
-randexp@0.4.6:
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/randexp/-/randexp-0.4.6.tgz#e986ad5e5e31dae13ddd6f7b3019aa7c87f60ca3"
-  dependencies:
-    discontinuous-range "1.0.0"
-    ret "~0.1.10"
 
 random-path@^0.1.0:
   version "0.1.1"
@@ -5951,25 +5639,13 @@ rc-align@2.x:
     rc-util "^4.0.4"
     shallowequal "^1.0.2"
 
-rc-animate@2.x, rc-animate@^2.0.0, rc-animate@^2.0.2, rc-animate@^2.3.0, rc-animate@^2.4.1:
+rc-animate@2.x, rc-animate@^2.0.2, rc-animate@^2.3.0, rc-animate@^2.4.1:
   version "2.4.4"
   resolved "https://registry.yarnpkg.com/rc-animate/-/rc-animate-2.4.4.tgz#a05a784c747beef140d99ff52b6117711bef4b1e"
   dependencies:
     babel-runtime "6.x"
     css-animation "^1.3.2"
     prop-types "15.x"
-
-rc-calendar@~8.4.0:
-  version "8.4.7"
-  resolved "https://registry.yarnpkg.com/rc-calendar/-/rc-calendar-8.4.7.tgz#f9cdbcdad4cfb901f52866000f31b41ddb4779ed"
-  dependencies:
-    babel-runtime "6.x"
-    classnames "2.x"
-    create-react-class "^15.5.2"
-    moment "2.x"
-    prop-types "^15.5.8"
-    rc-trigger "1.x"
-    rc-util "^4.0.4"
 
 rc-calendar@~9.6.0:
   version "9.6.0"
@@ -6011,16 +5687,6 @@ rc-collapse@~1.9.0:
     prop-types "^15.5.6"
     rc-animate "2.x"
 
-rc-dialog@~6.5.0:
-  version "6.5.11"
-  resolved "https://registry.yarnpkg.com/rc-dialog/-/rc-dialog-6.5.11.tgz#a6ef4d81a7801a54e9923273c605dd521d7fb142"
-  dependencies:
-    babel-runtime "6.x"
-    create-react-class "^15.5.2"
-    object-assign "~4.1.0"
-    rc-animate "2.x"
-    rc-util "^4.0.4"
-
 rc-dialog@~7.1.0:
   version "7.1.4"
   resolved "https://registry.yarnpkg.com/rc-dialog/-/rc-dialog-7.1.4.tgz#240c67461d875e49f5d3dd1677351963bcce790a"
@@ -6028,13 +5694,6 @@ rc-dialog@~7.1.0:
     babel-runtime "6.x"
     rc-animate "2.x"
     rc-util "^4.4.0"
-
-rc-dropdown@~1.4.0:
-  version "1.4.12"
-  resolved "https://registry.yarnpkg.com/rc-dropdown/-/rc-dropdown-1.4.12.tgz#02dea9f73fa579300586b869130aa2bf955ee733"
-  dependencies:
-    prop-types "^15.5.8"
-    rc-trigger "1.x"
 
 rc-dropdown@~2.1.0:
   version "2.1.2"
@@ -6099,32 +5758,6 @@ rc-input-number@~4.0.0:
     prop-types "^15.5.7"
     rmc-feedback "^2.0.0"
 
-rc-menu@^5.0.11, rc-menu@^5.1.4:
-  version "5.1.4"
-  resolved "https://registry.yarnpkg.com/rc-menu/-/rc-menu-5.1.4.tgz#e5df08fe8b833e81469135ff13b30ab8f21ff3c6"
-  dependencies:
-    babel-runtime "6.x"
-    classnames "2.x"
-    create-react-class "^15.5.2"
-    dom-scroll-into-view "1.x"
-    prop-types "^15.5.6"
-    rc-animate "2.x"
-    rc-util "^4.0.2"
-
-rc-menu@^6.2.5:
-  version "6.2.10"
-  resolved "https://registry.yarnpkg.com/rc-menu/-/rc-menu-6.2.10.tgz#d8a4ce5637ac51c1c539c4c6d0996e0ced5122ec"
-  dependencies:
-    babel-runtime "6.x"
-    classnames "2.x"
-    create-react-class "^15.5.2"
-    dom-scroll-into-view "1.x"
-    mini-store "^1.0.2"
-    prop-types "^15.5.6"
-    rc-animate "2.x"
-    rc-trigger "^2.3.0"
-    rc-util "^4.1.0"
-
 rc-menu@^7.0.2, rc-menu@~7.0.2:
   version "7.0.4"
   resolved "https://registry.yarnpkg.com/rc-menu/-/rc-menu-7.0.4.tgz#17282540934e16ce5d80b41477b610d5337e5a55"
@@ -6137,16 +5770,6 @@ rc-menu@^7.0.2, rc-menu@~7.0.2:
     rc-animate "2.x"
     rc-trigger "^2.3.0"
     rc-util "^4.1.0"
-
-rc-notification@^1.4.0:
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/rc-notification/-/rc-notification-1.4.3.tgz#4eae85807bd7e5aee1c8927a5c9bebafe4e57787"
-  dependencies:
-    babel-runtime "^6.23.0"
-    classnames "2.x"
-    prop-types "^15.5.8"
-    rc-animate "2.x"
-    rc-util "4.x"
 
 rc-notification@~3.1.1:
   version "3.1.1"
@@ -6165,12 +5788,6 @@ rc-pagination@~1.16.1:
     babel-runtime "6.x"
     prop-types "^15.5.7"
 
-rc-progress@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/rc-progress/-/rc-progress-1.0.4.tgz#cfcd5c9a11d40935cee42bb90f721b61337a2794"
-  dependencies:
-    object-assign "4.x"
-
 rc-progress@~2.2.2:
   version "2.2.5"
   resolved "https://registry.yarnpkg.com/rc-progress/-/rc-progress-2.2.5.tgz#e61d0544bf9d4208e5ba32fc50962159e7f952a3"
@@ -6186,21 +5803,6 @@ rc-rate@~2.4.0:
     classnames "^2.2.5"
     prop-types "^15.5.8"
     rc-util "^4.3.0"
-
-rc-select@^6.9.3:
-  version "6.9.7"
-  resolved "https://registry.yarnpkg.com/rc-select/-/rc-select-6.9.7.tgz#72741d0edaba36f1adfdaf823bcecbdac057065d"
-  dependencies:
-    babel-runtime "^6.23.0"
-    classnames "2.x"
-    component-classes "1.x"
-    dom-scroll-into-view "1.x"
-    prop-types "^15.5.8"
-    rc-animate "2.x"
-    rc-menu "^5.0.11"
-    rc-trigger "1.x"
-    rc-util "^4.0.4"
-    warning "^3.0.0"
 
 rc-select@~8.0.7:
   version "8.0.9"
@@ -6239,7 +5841,7 @@ rc-steps@~3.1.0:
     lodash "^4.17.5"
     prop-types "^15.5.7"
 
-rc-switch@^1.5.3, rc-switch@~1.6.0:
+rc-switch@~1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/rc-switch/-/rc-switch-1.6.0.tgz#c2d7369bdb87c1fd45e84989a27c1fb2f201d2fd"
   dependencies:
@@ -6261,14 +5863,6 @@ rc-table@~6.1.0:
     shallowequal "^1.0.2"
     warning "^3.0.0"
 
-rc-tabs@~7.0.10:
-  version "7.0.13"
-  resolved "https://registry.yarnpkg.com/rc-tabs/-/rc-tabs-7.0.13.tgz#b656b5812c452029701a99f5a54de67dcbfc9588"
-  dependencies:
-    babel-runtime "6.x"
-    classnames "2.x"
-    react-hammerjs "~0.5.0"
-
 rc-tabs@~9.2.0:
   version "9.2.5"
   resolved "https://registry.yarnpkg.com/rc-tabs/-/rc-tabs-9.2.5.tgz#fdd8e0633247f50c533030b73e3992270849f1f6"
@@ -6282,7 +5876,7 @@ rc-tabs@~9.2.0:
     rc-util "^4.0.4"
     warning "^3.0.0"
 
-rc-time-picker@^3.0.0, rc-time-picker@^3.3.1, rc-time-picker@~3.3.0:
+rc-time-picker@~3.3.0:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/rc-time-picker/-/rc-time-picker-3.3.1.tgz#94f8bbd51e6b93de1f01e78064aef1e6d765b367"
   dependencies:
@@ -6292,17 +5886,7 @@ rc-time-picker@^3.0.0, rc-time-picker@^3.3.1, rc-time-picker@~3.3.0:
     prop-types "^15.5.8"
     rc-trigger "^2.2.0"
 
-rc-time-picker@~2.4.0:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/rc-time-picker/-/rc-time-picker-2.4.1.tgz#074e3d1208e880edb0d99a7b9cc15b93505da8c6"
-  dependencies:
-    babel-runtime "6.x"
-    classnames "2.x"
-    moment "2.x"
-    prop-types "^15.5.8"
-    rc-trigger "1.x"
-
-rc-tooltip@^3.0.0, rc-tooltip@^3.3.0, rc-tooltip@^3.7.0, rc-tooltip@~3.7.0:
+rc-tooltip@^3.7.0, rc-tooltip@~3.7.0:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/rc-tooltip/-/rc-tooltip-3.7.2.tgz#3698656d4bacd51b72d9e327bed15d1d5a9f1b27"
   dependencies:
@@ -6310,13 +5894,7 @@ rc-tooltip@^3.0.0, rc-tooltip@^3.3.0, rc-tooltip@^3.7.0, rc-tooltip@~3.7.0:
     prop-types "^15.5.8"
     rc-trigger "^2.2.2"
 
-rc-tooltip@~3.3.0:
-  version "3.3.5"
-  resolved "https://registry.yarnpkg.com/rc-tooltip/-/rc-tooltip-3.3.5.tgz#1ce4addaf288d44904aa1eb0c04914ebe8da38a4"
-  dependencies:
-    rc-trigger "1.x"
-
-rc-tree-select@~1.12.0, rc-tree-select@~1.12.10:
+rc-tree-select@~1.12.0:
   version "1.12.13"
   resolved "https://registry.yarnpkg.com/rc-tree-select/-/rc-tree-select-1.12.13.tgz#3bf5684a3e38fbfbf8cc149d4f4a5d62f5ef0d47"
   dependencies:
@@ -6327,25 +5905,6 @@ rc-tree-select@~1.12.0, rc-tree-select@~1.12.10:
     rc-tree "~1.7.1"
     rc-trigger "^2.2.2"
     rc-util "^4.5.0"
-
-rc-tree@~1.11.0:
-  version "1.11.4"
-  resolved "https://registry.yarnpkg.com/rc-tree/-/rc-tree-1.11.4.tgz#f27b761fed7430799ead6fbf3d2b3ceb45c687c6"
-  dependencies:
-    babel-runtime "^6.23.0"
-    classnames "2.x"
-    prop-types "^15.5.8"
-    rc-animate "2.x"
-    rc-util "^4.0.4"
-    warning "^3.0.0"
-
-rc-tree@~1.3.0:
-  version "1.3.10"
-  resolved "https://registry.yarnpkg.com/rc-tree/-/rc-tree-1.3.10.tgz#0d475bc25208e0526e278a1c0620e1530ae94bcf"
-  dependencies:
-    classnames "2.x"
-    object-assign "4.x"
-    rc-animate "2.x"
 
 rc-tree@~1.7.1:
   version "1.7.11"
@@ -6369,17 +5928,6 @@ rc-tree@~1.8.0:
     rc-util "^4.0.4"
     warning "^3.0.0"
 
-rc-trigger@1.x:
-  version "1.11.5"
-  resolved "https://registry.yarnpkg.com/rc-trigger/-/rc-trigger-1.11.5.tgz#f88f9f84e0e79f8e0ef1c8d1bf8ac2208b715620"
-  dependencies:
-    babel-runtime "6.x"
-    create-react-class "15.x"
-    prop-types "15.x"
-    rc-align "2.x"
-    rc-animate "2.x"
-    rc-util "4.x"
-
 rc-trigger@^2.2.0, rc-trigger@^2.2.2, rc-trigger@^2.3.0:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/rc-trigger/-/rc-trigger-2.4.1.tgz#fb8c3fc1862124cac094fc8017ebd5387913db85"
@@ -6399,15 +5947,7 @@ rc-upload@~2.4.0:
     prop-types "^15.5.7"
     warning "2.x"
 
-rc-util@3.x:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-3.4.1.tgz#4b7e0b0c7593bdbcff8ed045d88fbbc773a7b061"
-  dependencies:
-    add-dom-event-listener "1.x"
-    classnames "2.x"
-    shallowequal "0.2.x"
-
-rc-util@4.x, rc-util@^4.0.2, rc-util@^4.0.4, rc-util@^4.1.0, rc-util@^4.1.1, rc-util@^4.3.0, rc-util@^4.4.0, rc-util@^4.5.0:
+rc-util@^4.0.4, rc-util@^4.1.0, rc-util@^4.1.1, rc-util@^4.3.0, rc-util@^4.4.0, rc-util@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-4.5.0.tgz#3183e6ec806f382efb2d3e85770d95875fa6180f"
   dependencies:
@@ -6459,12 +5999,6 @@ react-file-drop@^0.2.4:
   dependencies:
     prop-types "^15.6.1"
 
-react-hammerjs@~0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/react-hammerjs/-/react-hammerjs-0.5.0.tgz#aa20e5c5f44d660f3e8e87ed11282f12173e77ae"
-  dependencies:
-    hammerjs "^2.0.8"
-
 react-hot-loader@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/react-hot-loader/-/react-hot-loader-4.2.0.tgz#4a2ec79114f872e28ea786e04889d643ad3dfb7c"
@@ -6509,13 +6043,6 @@ react-loading@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/react-loading/-/react-loading-2.0.2.tgz#bc6d908fa316e1ccd677b7567792049a9bb4be0d"
 
-react-mixin@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/react-mixin/-/react-mixin-2.0.2.tgz#5133570554fa8954b7b847422dbd5e8c7a0a73d0"
-  dependencies:
-    object-assign "^2.0.0"
-    smart-mixin "^1.2.0"
-
 react-motion@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/react-motion/-/react-motion-0.5.2.tgz#0dd3a69e411316567927917c6626551ba0607316"
@@ -6523,12 +6050,6 @@ react-motion@^0.5.2:
     performance-now "^0.2.0"
     prop-types "^15.5.8"
     raf "^3.1.0"
-
-react-prop-types@~0.3.0:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/react-prop-types/-/react-prop-types-0.3.2.tgz#e2763ac6f3a80199d8981c3647c44b0554c97b7f"
-  dependencies:
-    warning "^2.0.0"
 
 react-redux@^5.0.6:
   version "5.0.7"
@@ -6541,14 +6062,6 @@ react-redux@^5.0.6:
     loose-envify "^1.1.0"
     prop-types "^15.6.0"
 
-react-responsive-mixin@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/react-responsive-mixin/-/react-responsive-mixin-0.4.0.tgz#9504218a17d49346d9a09a1f5945f629afdb624b"
-  dependencies:
-    can-use-dom "^0.1.0"
-    enquire.js "^2.1.1"
-    json2mq "^0.2.0"
-
 react-scrollbar@^0.5.4:
   version "0.5.4"
   resolved "https://registry.yarnpkg.com/react-scrollbar/-/react-scrollbar-0.5.4.tgz#270576a28d0f7783b2304b284dbd38d82b36b0e0"
@@ -6556,19 +6069,6 @@ react-scrollbar@^0.5.4:
     config "^1.24.0"
     line-height "^0.1.1"
     react-motion "^0.5.2"
-
-react-slick@0.14.8:
-  version "0.14.8"
-  resolved "https://registry.yarnpkg.com/react-slick/-/react-slick-0.14.8.tgz#c6e46b7243d869ad7c59c1ce32bf69490e335dc2"
-  dependencies:
-    classnames "^2.2.5"
-    create-react-class "^15.5.2"
-    enzyme "^2.8.1"
-    json2mq "^0.2.0"
-    object-assign "^4.1.0"
-    react-responsive-mixin "^0.4.0"
-    react-test-renderer "^15.5.4"
-    slick-carousel "^1.6.0"
 
 react-slick@~0.23.1:
   version "0.23.1"
@@ -6585,13 +6085,6 @@ react-table@^6.8.6:
   resolved "https://registry.yarnpkg.com/react-table/-/react-table-6.8.6.tgz#a0ad8b4839319052d5befc012603fb161e52ede3"
   dependencies:
     classnames "^2.2.5"
-
-react-test-renderer@^15.5.4:
-  version "15.6.2"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-15.6.2.tgz#d0333434fc2c438092696ca770da5ed48037efa8"
-  dependencies:
-    fbjs "^0.8.9"
-    object-assign "^4.1.0"
 
 react-transition-group@^1.2.1:
   version "1.2.1"
@@ -6610,16 +6103,6 @@ react-transition-group@^2.2.1:
     dom-helpers "^3.3.1"
     loose-envify "^1.3.1"
     prop-types "^15.6.1"
-
-react@^15.6.2:
-  version "15.6.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-15.6.2.tgz#dba0434ab439cfe82f108f0f511663908179aa72"
-  dependencies:
-    create-react-class "^15.6.0"
-    fbjs "^0.8.9"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.0"
-    prop-types "^15.5.10"
 
 react@^16.3.2:
   version "16.3.2"
@@ -6692,7 +6175,7 @@ readable-stream@^1.0.27-1, readable-stream@^1.1.8, readable-stream@~1.1.9:
     isarray "0.0.1"
     string_decoder "~0.10.x"
 
-readable-stream@^2.0.2, readable-stream@^2.0.6, readable-stream@^2.1.4, readable-stream@^2.2.2:
+readable-stream@^2.0.6, readable-stream@^2.1.4, readable-stream@^2.2.2:
   version "2.3.6"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-2.3.6.tgz#b11c27d88b8ff1fbe070643cf94b0c79ae1b0aaf"
   dependencies:
@@ -6945,10 +6428,6 @@ restore-cursor@^2.0.0:
     onetime "^2.0.0"
     signal-exit "^3.0.2"
 
-ret@~0.1.10:
-  version "0.1.15"
-  resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
-
 right-align@^0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/right-align/-/right-align-0.1.3.tgz#61339b722fe6a3515689210d24e14c96148613ef"
@@ -6975,13 +6454,6 @@ rmc-feedback@^2.0.0:
 rodal@^1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/rodal/-/rodal-1.6.3.tgz#27c4810ca2d34fd6aedcbdbf7721a06c78a5b9a8"
-
-rst-selector-parser@^2.2.3:
-  version "2.2.3"
-  resolved "https://registry.yarnpkg.com/rst-selector-parser/-/rst-selector-parser-2.2.3.tgz#81b230ea2fcc6066c89e3472de794285d9b03d91"
-  dependencies:
-    lodash.flattendeep "^4.4.0"
-    nearley "^2.7.10"
 
 run-async@^0.1.0:
   version "0.1.0"
@@ -7120,7 +6592,7 @@ shallow-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.0.0.tgz#508d1838b3de590ab8757b011b25e430900945f7"
 
-shallowequal@0.2.x, shallowequal@^0.2.2:
+shallowequal@^0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/shallowequal/-/shallowequal-0.2.2.tgz#1e32fd5bcab6ad688a4812cb0cc04efc75c7014e"
   dependencies:
@@ -7170,13 +6642,9 @@ slice-ansi@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/slice-ansi/-/slice-ansi-0.0.4.tgz#edbf8903f66f7ce2f8eafd6ceed65e264c831b35"
 
-slick-carousel@^1.6.0:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
-
-smart-mixin@^1.2.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/smart-mixin/-/smart-mixin-1.2.1.tgz#11a2b3e4628dfee16ac9cb51edd301be21be1452"
+sliced@0.0.x:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/sliced/-/sliced-0.0.5.tgz#5edc044ca4eb6f7816d50ba2fc63e25d8fe4707f"
 
 sntp@1.x.x:
   version "1.0.9"
@@ -7300,6 +6768,13 @@ sprintf-js@~1.0.2:
 sql.js@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/sql.js/-/sql.js-0.5.0.tgz#f880dea18280a840e41df2209dc967422dfa8d81"
+
+sql@^0.78.0:
+  version "0.78.0"
+  resolved "https://registry.yarnpkg.com/sql/-/sql-0.78.0.tgz#894585d56111dbb1768741a4d9935c82c8595949"
+  dependencies:
+    lodash "4.1.x"
+    sliced "0.0.x"
 
 ssf@~0.10.2:
   version "0.10.2"
@@ -7749,10 +7224,6 @@ uglify-to-browserify@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
 
-underscore@~1.4.4:
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.4.4.tgz#61a6a32010622afa07963bf325203cf12239d604"
-
 uniq@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/uniq/-/uniq-1.0.1.tgz#b31c5ae8254844a3a8281541ce2b04b865a734ff"
@@ -7799,10 +7270,6 @@ update-notifier@^2.5.0:
     latest-version "^3.0.0"
     semver-diff "^2.0.0"
     xdg-basedir "^3.0.0"
-
-uploadcore@~2.3.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/uploadcore/-/uploadcore-2.3.1.tgz#a6420bad4a9878becd2e371aceb469141775f4e5"
 
 uri-js@^4.2.1:
   version "4.2.1"
@@ -7859,897 +7326,9 @@ uuid@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
 
-uuid@^3.0.0, uuid@^3.0.1, uuid@^3.1.0:
+uuid@^3.0.0, uuid@^3.1.0:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.2.1.tgz#12c528bb9d58d0b9265d9a2f6f0fe8be17ff1f14"
-
-uxcore-album@0.3.16, uxcore-album@^0.3.15:
-  version "0.3.16"
-  resolved "https://registry.yarnpkg.com/uxcore-album/-/uxcore-album-0.3.16.tgz#b0b5ef9c418023e5bbf9ad98731ffd61b9ad2541"
-  dependencies:
-    classnames "^2.2.5"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-animate "~0.2.0"
-    uxcore-icon "^0.1.10"
-
-uxcore-alert@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/uxcore-alert/-/uxcore-alert-0.3.2.tgz#2c6b4d4884fbd5f9935663ac39db97e5e5cf2f21"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-icon "^0.1.12"
-
-uxcore-animate@0.2.2, uxcore-animate@^0.2.0, uxcore-animate@~0.2.0:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/uxcore-animate/-/uxcore-animate-0.2.2.tgz#c9b6f63cc2585df7d3ebc4234626fa7d5dbc4d2a"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-animate "^2.0.0"
-
-uxcore-badge@0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/uxcore-badge/-/uxcore-badge-0.2.2.tgz#332524483e505da48d1cf146ce889b925c746c3f"
-  dependencies:
-    classnames "^2.1.2"
-    css-animation "~1.2.5"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-animate "^2.4.1"
-
-uxcore-button-group@0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/uxcore-button-group/-/uxcore-button-group-0.1.5.tgz#50c578bf595fe3fbecdb7557d53c511e6e3bffba"
-  dependencies:
-    classnames "^2.1.2"
-    prop-types "15.x"
-    uxcore-button "^0.4.15"
-    uxcore-dropdown "^0.4.1"
-    uxcore-menu "^2.0.0"
-
-uxcore-button-group@^0.1.1:
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/uxcore-button-group/-/uxcore-button-group-0.1.6.tgz#ef2f24c6841525e4b44dbfe476320335f9cb754c"
-  dependencies:
-    classnames "^2.1.2"
-    prop-types "15.x"
-    uxcore-button "^0.4.15"
-    uxcore-dropdown "^0.4.1"
-    uxcore-menu "^3.0.0"
-
-uxcore-button@0.4.17, uxcore-button@^0.4.0, uxcore-button@^0.4.10, uxcore-button@^0.4.11, uxcore-button@^0.4.14, uxcore-button@^0.4.15, uxcore-button@^0.4.16, uxcore-button@^0.4.6, uxcore-button@~0.4.0:
-  version "0.4.17"
-  resolved "https://registry.yarnpkg.com/uxcore-button/-/uxcore-button-0.4.17.tgz#ae059d626aa005083184a141362a2203a3102ceb"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-button@^0.3.12, uxcore-button@~0.3.0:
-  version "0.3.12"
-  resolved "https://registry.yarnpkg.com/uxcore-button/-/uxcore-button-0.3.12.tgz#858cb5f749afd6fa573183f0f14a8505b57e300b"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-
-uxcore-calendar@0.9.20:
-  version "0.9.20"
-  resolved "https://registry.yarnpkg.com/uxcore-calendar/-/uxcore-calendar-0.9.20.tgz#c7ee4f9b5154c8797c96957e5a3fecc6cde2a2ee"
-  dependencies:
-    classnames "^2.1.2"
-    create-react-class "15.x"
-    moment "^2.17.1"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-calendar "~8.4.0"
-    rc-time-picker "~2.4.0"
-    rc-util "3.x"
-    uxcore-button "^0.4.6"
-    uxcore-formatter "~0.1.2"
-    uxcore-icon "^0.1.2"
-    uxcore-select2 "^0.4.3"
-    uxcore-tooltip "~0.4.0"
-
-uxcore-calendar@~0.9.0:
-  version "0.9.22"
-  resolved "https://registry.yarnpkg.com/uxcore-calendar/-/uxcore-calendar-0.9.22.tgz#78546554e686f967bd6946167cdb5fe6efdc57a7"
-  dependencies:
-    classnames "^2.1.2"
-    create-react-class "15.x"
-    moment "^2.17.1"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-calendar "~8.4.0"
-    rc-time-picker "^3.0.0"
-    rc-util "4.x"
-    uxcore-button "^0.4.6"
-    uxcore-formatter "~0.1.2"
-    uxcore-icon "^0.1.2"
-    uxcore-select2 "^0.4.3"
-    uxcore-tooltip "~0.4.0"
-
-uxcore-carousel@0.3.7:
-  version "0.3.7"
-  resolved "https://registry.yarnpkg.com/uxcore-carousel/-/uxcore-carousel-0.3.7.tgz#fc77ba3b98a6365ef26bc814c3593b32a439ba8a"
-  dependencies:
-    classnames "^2.1.2"
-    prop-types "15.x"
-    react-slick "0.14.8"
-
-uxcore-cascade-multi-select@0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/uxcore-cascade-multi-select/-/uxcore-cascade-multi-select-0.7.1.tgz#0e2c619916199cf63be220badb8dc80c05bc6e4b"
-  dependencies:
-    classnames "^2.1.2"
-    lodash "^4.17.4"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-button "^0.4.16"
-    uxcore-dialog "^0.7.7"
-    uxcore-dropdown "^0.4.1"
-
-uxcore-cascade-select@0.6.3:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/uxcore-cascade-select/-/uxcore-cascade-select-0.6.3.tgz#9bbd296d5590d67752f04df029ddf4fe7de35944"
-  dependencies:
-    classnames "^2.1.2"
-    lie "^3.1.1"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-button "^0.4.10"
-    uxcore-dropdown "^0.4.1"
-    uxcore-select2 "^0.4.17"
-
-uxcore-cell-field@^0.2.0, uxcore-cell-field@^0.2.2:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/uxcore-cell-field/-/uxcore-cell-field-0.2.3.tgz#2b792e19d1336779f4527452bbc16127bd46cabd"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-tooltip "^0.4.5"
-
-uxcore-checkbox-cell-field@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/uxcore-checkbox-cell-field/-/uxcore-checkbox-cell-field-0.2.0.tgz#8ac6a5535487c510890f5c7ecc5f8bb097f88f3b"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    uxcore-cell-field "^0.2.0"
-    uxcore-checkbox-group "^1.1.1"
-
-uxcore-checkbox-group@1.3.0, uxcore-checkbox-group@^1.1.1, uxcore-checkbox-group@^1.1.4, uxcore-checkbox-group@^1.2.0, uxcore-checkbox-group@^1.2.4:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/uxcore-checkbox-group/-/uxcore-checkbox-group-1.3.0.tgz#ce6a889ddd7f77155a1cb0a11671f8a8b79f6d27"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-collapse@2.1.1, uxcore-collapse@^2.0.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/uxcore-collapse/-/uxcore-collapse-2.1.1.tgz#a203325d71a8e7902161750993dd93ffdc8fc516"
-  dependencies:
-    classnames "^2.2.5"
-    css-animation "^1.3.2"
-    lodash "^4.17.5"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-animate "^0.2.0"
-
-uxcore-const@0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/uxcore-const/-/uxcore-const-0.0.2.tgz#fc76f3af6299e9dbc8d0653136052c748adfc0f3"
-
-uxcore-const@0.0.3, uxcore-const@~0.0.1, uxcore-const@~0.0.2:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/uxcore-const/-/uxcore-const-0.0.3.tgz#cc2070e491a006cbd394971f766b1bcda04c6157"
-
-uxcore-const@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/uxcore-const/-/uxcore-const-1.0.0.tgz#ca0759f0d62612d1fab13afc9fde0dbb584fc272"
-
-uxcore-crumb-item@~0.1.3:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/uxcore-crumb-item/-/uxcore-crumb-item-0.1.4.tgz#b8e1d0ee0057eecb40cee7c6f4f487feff12a376"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-
-uxcore-crumb@0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/uxcore-crumb/-/uxcore-crumb-0.2.4.tgz#225db2be8f33ad72f6c2c849848c2c9d6eb76f3a"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-crumb-item "~0.1.3"
-
-uxcore-date-cell-field@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/uxcore-date-cell-field/-/uxcore-date-cell-field-0.5.0.tgz#1db6ba861638a9312a3dfef040fb9fc853e1ddff"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-calendar "~0.9.0"
-    uxcore-cell-field "^0.2.0"
-    uxcore-formatter "^0.1.3"
-
-uxcore-date-form-field@~0.8.0:
-  version "0.8.14"
-  resolved "https://registry.yarnpkg.com/uxcore-date-form-field/-/uxcore-date-form-field-0.8.14.tgz#f6c40bdd6d21e424bde8421c138682ce76019b0c"
-  dependencies:
-    classnames "^2.1.2"
-    lodash "^4.16.4"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-util "^4.0.2"
-    uxcore-calendar "~0.9.0"
-    uxcore-const "^1.0.0"
-    uxcore-form-field "~0.2.2"
-    uxcore-formatter "~0.1.2"
-
-uxcore-dialog@0.7.12, uxcore-dialog@^0.7.7:
-  version "0.7.12"
-  resolved "https://registry.yarnpkg.com/uxcore-dialog/-/uxcore-dialog-0.7.12.tgz#2bc23a6dee1cf299a797a1f8a4ef7cb0385accb4"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-dialog "~6.5.0"
-    uxcore-button "~0.4.0"
-    uxcore-icon "^0.1.6"
-
-uxcore-dropdown@0.4.3, uxcore-dropdown@^0.4.1:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/uxcore-dropdown/-/uxcore-dropdown-0.4.3.tgz#a6672e61685cb18b96c00c6f6aaebecaacb08720"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    rc-dropdown "~1.4.0"
-
-uxcore-empty-data@0.1.5, uxcore-empty-data@^0.1.2:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/uxcore-empty-data/-/uxcore-empty-data-0.1.5.tgz#430f68bbba4d9e06dd262a826f509593e2345cf2"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-float-nav@0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/uxcore-float-nav/-/uxcore-float-nav-0.3.0.tgz#58fa113e062888e0fa6f27f04b282bd95e8deb30"
-  dependencies:
-    classnames "^2.1.2"
-    enzyme "^3.3.0"
-    es5-shim "^4.5.10"
-    kuma-base "^1.10.0"
-    lodash "^4.17.4"
-    object-assign "^4.1.1"
-    prop-types "^15.6.0"
-    react "^15.6.2"
-    uxcore-kuma "^10.0.0"
-
-uxcore-form-field@0.2.36:
-  version "0.2.36"
-  resolved "https://registry.yarnpkg.com/uxcore-form-field/-/uxcore-form-field-0.2.36.tgz#179375563c8fce12e9753b6ec970798022d019be"
-  dependencies:
-    classnames "^2.1.2"
-    lie "^3.1.0"
-    lodash "^4.17.4"
-    object-assign "~4.0.1"
-    prop-types "15.x"
-    uxcore-const "0.0.2"
-
-uxcore-form-field@^0.2.0, uxcore-form-field@~0.2.0, uxcore-form-field@~0.2.2:
-  version "0.2.37"
-  resolved "https://registry.yarnpkg.com/uxcore-form-field/-/uxcore-form-field-0.2.37.tgz#8eb57c1177d77d40e361dbd4bf9a3eb1d50aaaf1"
-  dependencies:
-    classnames "^2.1.2"
-    lie "^3.1.0"
-    lodash "^4.17.4"
-    object-assign "^4.0.1"
-    prop-types "15.x"
-    uxcore-const "^1.0.0"
-
-uxcore-form-row@~0.1.3:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/uxcore-form-row/-/uxcore-form-row-0.1.10.tgz#1ea3856ea96a1918ad2d62bc38252b9bd34ce878"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-const "^1.0.0"
-
-uxcore-form@6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/uxcore-form/-/uxcore-form-6.3.1.tgz#2139aa5e0ad1464020d72cc21c4dc27fe19e0e8d"
-  dependencies:
-    classnames "^2.1.2"
-    deep-equal "~1.0.1"
-    lie "^3.1.0"
-    lodash "^4.16.6"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-checkbox-group "^1.2.0"
-    uxcore-const "~0.0.1"
-    uxcore-date-form-field "~0.8.0"
-    uxcore-form-field "~0.2.0"
-    uxcore-form-row "~0.1.3"
-    uxcore-formatter "~0.1.1"
-    uxcore-icon "^0.1.4"
-    uxcore-input-form-field "~0.2.0"
-    uxcore-other-form-field "~0.1.2"
-    uxcore-pickable-form-field "~0.4.0"
-    uxcore-radiogroup "^1.2.0"
-    uxcore-rich-text "^0.1.1"
-    uxcore-select-form-field "~0.3.0"
-    uxcore-select2 "~0.4.0"
-    uxcore-switch-form-field "~0.1.1"
-    uxcore-textarea-form-field "^0.1.1"
-    uxcore-tinymce "~0.2.0"
-    uxcore-title "^0.1.1"
-    uxcore-validator "~0.2.0"
-
-uxcore-formatter@0.1.10:
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/uxcore-formatter/-/uxcore-formatter-0.1.10.tgz#27e575f6e85cf5ffb61913877986656b7dcd8af4"
-  dependencies:
-    big.js "^5.0.3"
-    object-assign "^2.0.0"
-    prop-types "15.x"
-
-uxcore-formatter@^0.1.3, uxcore-formatter@~0.1.1, uxcore-formatter@~0.1.2:
-  version "0.1.11"
-  resolved "https://registry.yarnpkg.com/uxcore-formatter/-/uxcore-formatter-0.1.11.tgz#d3ed7a534e7736815f4a4adddf97e8cd19cf8c64"
-  dependencies:
-    big.js "^5.0.3"
-
-uxcore-grid@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/uxcore-grid/-/uxcore-grid-1.3.0.tgz#a54a795592a9a35588f1560c34c5f4d093f18dad"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    react-prop-types "~0.3.0"
-
-uxcore-icon@0.1.19, uxcore-icon@^0.1.1, uxcore-icon@^0.1.10, uxcore-icon@^0.1.12, uxcore-icon@^0.1.13, uxcore-icon@^0.1.14, uxcore-icon@^0.1.15, uxcore-icon@^0.1.2, uxcore-icon@^0.1.4, uxcore-icon@^0.1.5, uxcore-icon@^0.1.6, uxcore-icon@^0.1.7:
-  version "0.1.19"
-  resolved "https://registry.yarnpkg.com/uxcore-icon/-/uxcore-icon-0.1.19.tgz#42a255b10caf9bd70575ec6eab75d8cc7ae9f995"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-input-form-field@~0.2.0:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/uxcore-input-form-field/-/uxcore-input-form-field-0.2.1.tgz#6383463ee2559077cbb7bdab2105b024cfe707cf"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-const "^1.0.0"
-    uxcore-form-field "~0.2.0"
-
-uxcore-kuma@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/uxcore-kuma/-/uxcore-kuma-10.0.0.tgz#d233054e1cc0486ef33dbb7369a68094d698b077"
-
-uxcore-layout@1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/uxcore-layout/-/uxcore-layout-1.0.8.tgz#2a82d2e8de7a9cfbee89444cf824c43160386daf"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-load-more@0.1.3:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/uxcore-load-more/-/uxcore-load-more-0.1.3.tgz#c2341eaaa796d06a164b0e7711704aaec62b84f5"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-matrix@0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/uxcore-matrix/-/uxcore-matrix-0.3.1.tgz#48ddc58d8613e0c2fe96a07c16480a675a0586ff"
-  dependencies:
-    classnames "^2.1.2"
-    lodash.clonedeep "^4.5.0"
-    lodash.isequal "^4.5.0"
-    prop-types "15.x"
-
-uxcore-mention@0.3.17:
-  version "0.3.17"
-  resolved "https://registry.yarnpkg.com/uxcore-mention/-/uxcore-mention-0.3.17.tgz#3afb1067a46af74e92ea518673b2aa868f074324"
-  dependencies:
-    classnames "^2.1.2"
-    prop-types "15.x"
-    react-mixin "^2.0.2"
-
-uxcore-menu@3.0.1, uxcore-menu@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/uxcore-menu/-/uxcore-menu-3.0.1.tgz#79507fad9c108e680d47ce2a0974f30157343bff"
-  dependencies:
-    classnames "^2.1.2"
-    css-animation "^1.3.0"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-menu "^6.2.5"
-
-uxcore-menu@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/uxcore-menu/-/uxcore-menu-2.0.0.tgz#a32a7d47103bea497283c4f161bc298d6b55693c"
-  dependencies:
-    classnames "^2.1.2"
-    css-animation "^1.3.0"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-menu "^5.1.4"
-
-uxcore-message@0.5.3:
-  version "0.5.3"
-  resolved "https://registry.yarnpkg.com/uxcore-message/-/uxcore-message-0.5.3.tgz#d51e39dcd4f25c00d3418a9bc388bc8fcf010a5c"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-notification "^1.4.0"
-
-uxcore-multi-select@0.4.7:
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/uxcore-multi-select/-/uxcore-multi-select-0.4.7.tgz#23387c48bd66df32275776de713d4909c5dbd9c1"
-  dependencies:
-    classnames "^2.2.5"
-    prop-types "^15.6.0"
-    uxcore-button "^0.3.12"
-    uxcore-checkbox-group "^1.1.4"
-    uxcore-dropdown "^0.4.1"
-
-uxcore-other-form-field@~0.1.2:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/uxcore-other-form-field/-/uxcore-other-form-field-0.1.5.tgz#b554a4ce7b2771615db8bd46010b5578754dbb78"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-pagination@0.6.3, uxcore-pagination@~0.6.0:
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/uxcore-pagination/-/uxcore-pagination-0.6.3.tgz#031e85f3a1f554cab4f5311bc001f89aab13f2a8"
-  dependencies:
-    classnames "^2.1.5"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-button "^0.4.14"
-    uxcore-select2 "~0.4.0"
-
-uxcore-pickable-form-field@0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/uxcore-pickable-form-field/-/uxcore-pickable-form-field-0.4.3.tgz#4febc69f7c5e6106f7634f1527b15b70cb660cb4"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.1.0"
-    prop-types "15.x"
-    uxcore-const "~0.0.2"
-    uxcore-form-field "~0.2.0"
-    uxcore-pickable "^3.0.0"
-
-uxcore-pickable-form-field@~0.4.0:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/uxcore-pickable-form-field/-/uxcore-pickable-form-field-0.4.4.tgz#ed822843ee4cd66cb4ae4d561b78d853c6817992"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.1.0"
-    prop-types "15.x"
-    uxcore-const "^1.0.0"
-    uxcore-form-field "^0.2.0"
-    uxcore-pickable "^3.0.0"
-
-uxcore-pickable@3.1.2, uxcore-pickable@^3.0.0:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/uxcore-pickable/-/uxcore-pickable-3.1.2.tgz#d04b17b97e5f6a42db7d419a6de1b744773f0e91"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-util "^4.0.4"
-    uxcore-icon "^0.1.14"
-
-uxcore-popover@0.5.4:
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/uxcore-popover/-/uxcore-popover-0.5.4.tgz#835cc63ca24dab447397e2dd6539efa27758f411"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-tooltip "^3.3.0"
-    uxcore-button "~0.3.0"
-
-uxcore-popover@^0.4.0:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/uxcore-popover/-/uxcore-popover-0.4.3.tgz#998fd5a37fb45f358040b087c0f941d28bdb0146"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    rc-tooltip "~3.3.0"
-    uxcore-button "~0.3.0"
-
-uxcore-popover@^0.5.4, uxcore-popover@~0.5.0:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/uxcore-popover/-/uxcore-popover-0.5.5.tgz#cd051fc0ae03685f5c96f1c1c61b215fdb76eff6"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-tooltip "^3.3.0"
-    uxcore-button "^0.4.0"
-
-uxcore-progress@1.1.5, uxcore-progress@^1.1.0:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/uxcore-progress/-/uxcore-progress-1.1.5.tgz#94cc4d33a54fccc647c56f6c6354efc63b3c5ebe"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-progress "^1.0.3"
-
-uxcore-radiogroup@1.3.1, uxcore-radiogroup@^1.2.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/uxcore-radiogroup/-/uxcore-radiogroup-1.3.1.tgz#799f6db2d96ff67292b1e9738012e3c36d477cb9"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-radiogroup@~1.2.0:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/uxcore-radiogroup/-/uxcore-radiogroup-1.2.4.tgz#aa619a774d8936abd1cf111f25e07a578a029312"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-rate@0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/uxcore-rate/-/uxcore-rate-0.3.5.tgz#f6ee347e7dc07d6b214fe2730c520486d9421a51"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-icon "^0.1.5"
-    uxcore-tooltip "~0.4.0"
-
-uxcore-rich-text@^0.1.1:
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/uxcore-rich-text/-/uxcore-rich-text-0.1.3.tgz#ba5663255659b5ff333a052469ad73f916faa7b4"
-  dependencies:
-    classnames "^2.1.2"
-    prop-types "15.x"
-
-uxcore-select-form-field@~0.3.0:
-  version "0.3.18"
-  resolved "https://registry.yarnpkg.com/uxcore-select-form-field/-/uxcore-select-form-field-0.3.18.tgz#cfc1bd7d3313eb10384c71c1c96b182fec87b2f5"
-  dependencies:
-    classnames "^2.1.2"
-    lie "^3.1.0"
-    lodash "^4.15.0"
-    natty-fetch "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-const "^1.0.0"
-    uxcore-form-field "^0.2.0"
-    uxcore-select2 "^0.4.0"
-
-uxcore-select2@0.4.22:
-  version "0.4.22"
-  resolved "https://registry.yarnpkg.com/uxcore-select2/-/uxcore-select2-0.4.22.tgz#f7f915f7e7b8313f213168ad271cb8ffba95b465"
-  dependencies:
-    classnames "^2.2.5"
-    prop-types "^15.6.0"
-    rc-select "^6.9.3"
-
-uxcore-select2@^0.4.0, uxcore-select2@^0.4.17, uxcore-select2@^0.4.3, uxcore-select2@~0.4.0:
-  version "0.4.23"
-  resolved "https://registry.yarnpkg.com/uxcore-select2/-/uxcore-select2-0.4.23.tgz#013222cb23ca005a1dba2e730161f719d1b81d56"
-  dependencies:
-    classnames "^2.2.5"
-    prop-types "^15.6.0"
-    rc-select "^6.9.3"
-
-uxcore-splitter@0.1.4:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/uxcore-splitter/-/uxcore-splitter-0.1.4.tgz#8bd69bffcc46b2614e7ae25a3f4226bdca804feb"
-  dependencies:
-    classnames "^2.2.5"
-    object-assign "^4.1.0"
-
-uxcore-steps@2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/uxcore-steps/-/uxcore-steps-2.1.6.tgz#6f6fb025623ed76a0c4ac9ece6269b87479a389d"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "^15.6.0"
-    uxcore-icon "^0.1.15"
-    uxcore-tooltip "^0.4.5"
-
-uxcore-switch-form-field@~0.1.1:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/uxcore-switch-form-field/-/uxcore-switch-form-field-0.1.8.tgz#a63e0adc95697dbc2dcc3582bd72f1c0385f1415"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    uxcore-const "^1.0.0"
-    uxcore-form-field "^0.2.0"
-    uxcore-switch "^0.1.6"
-
-uxcore-switch@0.1.8, uxcore-switch@^0.1.6:
-  version "0.1.8"
-  resolved "https://registry.yarnpkg.com/uxcore-switch/-/uxcore-switch-0.1.8.tgz#ebfaf0c89489962e3ee1d046fb115eca11e2b74b"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    rc-switch "^1.5.3"
-
-uxcore-table@8.5.0:
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/uxcore-table/-/uxcore-table-8.5.0.tgz#940c40a047c5d6dadc0a0527b49fc40657626a38"
-  dependencies:
-    classnames "^2.1.2"
-    css-animation "^1.3.2"
-    deep-equal "~1.0.1"
-    lie "^3.1.0"
-    lodash "^4.15.0"
-    natty-fetch "~2.1.1"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    raf "^3.4.0"
-    rc-util "4.x"
-    uxcore-animate "^0.2.0"
-    uxcore-button "^0.4.0"
-    uxcore-button-group "^0.1.1"
-    uxcore-cell-field "^0.2.2"
-    uxcore-checkbox-cell-field "^0.2.0"
-    uxcore-checkbox-group "^1.2.4"
-    uxcore-collapse "^2.0.1"
-    uxcore-const "~0.0.1"
-    uxcore-date-cell-field "^0.5.0"
-    uxcore-dropdown "^0.4.1"
-    uxcore-empty-data "^0.1.2"
-    uxcore-formatter "~0.1.2"
-    uxcore-icon "^0.1.10"
-    uxcore-menu "^3.0.0"
-    uxcore-pagination "~0.6.0"
-    uxcore-popover "^0.5.4"
-    uxcore-radiogroup "~1.2.0"
-    uxcore-select2 "~0.4.0"
-    uxcore-tooltip "~0.4.0"
-    uxcore-tree "^0.2.4"
-    uxcore-validator "~0.1.0"
-
-uxcore-tabs@0.6.13:
-  version "0.6.13"
-  resolved "https://registry.yarnpkg.com/uxcore-tabs/-/uxcore-tabs-0.6.13.tgz#551951bbde39b646bf128ca83d499793d3160a83"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-tabs "~7.0.10"
-
-uxcore-tag@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/uxcore-tag/-/uxcore-tag-2.1.1.tgz#23a5d8357c4feb5c772db1b763f09eb5fc719403"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-icon "^0.1.7"
-    uxcore-popover "~0.5.0"
-
-uxcore-textarea-form-field@^0.1.1:
-  version "0.1.15"
-  resolved "https://registry.yarnpkg.com/uxcore-textarea-form-field/-/uxcore-textarea-form-field-0.1.15.tgz#2f3076fb0cd95ac8f25accd20dc0d02136bc7918"
-  dependencies:
-    autosize "^3.0.15"
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uxcore-const "^1.0.0"
-    uxcore-form-field "^0.2.0"
-    uxcore-utils "^0.1.1"
-
-uxcore-time-picker@0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/uxcore-time-picker/-/uxcore-time-picker-0.1.1.tgz#87edfb747274825f42706143c05854e544fbe20b"
-  dependencies:
-    classnames "^2.1.2"
-    moment "^2.22.0"
-    prop-types "15.x"
-    rc-time-picker "^3.3.1"
-
-uxcore-timeline@0.2.3:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/uxcore-timeline/-/uxcore-timeline-0.2.3.tgz#c742cebea353a3565d246c36e395cb7492af58ce"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-tinymce@0.2.10, uxcore-tinymce@~0.2.0:
-  version "0.2.10"
-  resolved "https://registry.yarnpkg.com/uxcore-tinymce/-/uxcore-tinymce-0.2.10.tgz#c2f047c3f2db3db18b65aeb76a53823f6feb4ebc"
-  dependencies:
-    classnames "^2.1.2"
-    deep-equal "~1.0.1"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-title@0.1.5, uxcore-title@^0.1.1:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/uxcore-title/-/uxcore-title-0.1.5.tgz#bc70412634216b8b9658d1af733f39fd2cc9b0e7"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-tooltip@0.4.10, uxcore-tooltip@^0.4.5, uxcore-tooltip@~0.4.0:
-  version "0.4.10"
-  resolved "https://registry.yarnpkg.com/uxcore-tooltip/-/uxcore-tooltip-0.4.10.tgz#815a800761a78aa4ebdb9e9a27e6a0f6b4687ebf"
-  dependencies:
-    rc-tooltip "^3.0.0"
-
-uxcore-totop@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/uxcore-totop/-/uxcore-totop-0.5.0.tgz#9f1e1c8914d6d22fb58895451833134bf8076202"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-util "4.x"
-    uxcore-animate "^0.2.0"
-    uxcore-icon "^0.1.13"
-    uxcore-popover "^0.4.0"
-
-uxcore-transfer@0.3.15:
-  version "0.3.15"
-  resolved "https://registry.yarnpkg.com/uxcore-transfer/-/uxcore-transfer-0.3.15.tgz#c79731ccbd033187ca68ecfeafa4fbe0aea7e70b"
-  dependencies:
-    classnames "^2.1.2"
-    lodash "^4.17.4"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-tree-select@0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/uxcore-tree-select/-/uxcore-tree-select-0.4.4.tgz#4a65d7f823fa691a69389831ce833b27fb115719"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "~4.1.0"
-    prop-types "15.x"
-    rc-tree "~1.7.1"
-    rc-tree-select "~1.12.10"
-    rc-trigger "^2.2.2"
-    rc-util "^4.0.2"
-
-uxcore-tree@0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/uxcore-tree/-/uxcore-tree-0.3.1.tgz#a09a013516f0fdf7588cd1c5a5be473a2d24f088"
-  dependencies:
-    classnames "^2.1.2"
-    css-animation "^1.3.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-tree "~1.11.0"
-
-uxcore-tree@^0.2.4:
-  version "0.2.19"
-  resolved "https://registry.yarnpkg.com/uxcore-tree/-/uxcore-tree-0.2.19.tgz#63ba4aa327c7ab095a66394ee1daf1d1aaa946c9"
-  dependencies:
-    classnames "^2.1.2"
-    css-animation "^1.3.2"
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    rc-tree "~1.3.0"
-
-uxcore-uploader@3.1.11:
-  version "3.1.11"
-  resolved "https://registry.yarnpkg.com/uxcore-uploader/-/uxcore-uploader-3.1.11.tgz#3f1f7a6600a9a6d4b94668f5b324b53a9b33ee8a"
-  dependencies:
-    object-assign "^4.0.0"
-    prop-types "15.x"
-    uploadcore "~2.3.0"
-    uxcore-album "^0.3.15"
-    uxcore-button "^0.4.11"
-    uxcore-icon "^0.1.1"
-    uxcore-progress "^1.1.0"
-
-uxcore-utils@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/uxcore-utils/-/uxcore-utils-0.1.1.tgz#d8b463b95277a941fa3c6db65ceb8f58f093fb30"
-  dependencies:
-    classnames "^2.1.2"
-    object-assign "^4.0.0"
-
-uxcore-validator@0.2.4, uxcore-validator@~0.2.0:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/uxcore-validator/-/uxcore-validator-0.2.4.tgz#eceb0c1fe55c50ccf3730fe41d87cfcf56c8fd86"
-  dependencies:
-    object-assign "^4.0.0"
-    prop-types "15.x"
-
-uxcore-validator@~0.1.0:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/uxcore-validator/-/uxcore-validator-0.1.4.tgz#0e8de1d507877c8d0591671bd296d07b3db0bf20"
-  dependencies:
-    object-assign "^4.0.0"
-
-uxcore@^0.19.29:
-  version "0.19.29"
-  resolved "https://registry.yarnpkg.com/uxcore/-/uxcore-0.19.29.tgz#884656970448297705bb237620622e7d04c9758c"
-  dependencies:
-    uxcore-album "0.3.16"
-    uxcore-alert "0.3.2"
-    uxcore-animate "0.2.2"
-    uxcore-badge "0.2.2"
-    uxcore-button "0.4.17"
-    uxcore-button-group "0.1.5"
-    uxcore-calendar "0.9.20"
-    uxcore-carousel "0.3.7"
-    uxcore-cascade-multi-select "0.7.1"
-    uxcore-cascade-select "0.6.3"
-    uxcore-checkbox-group "1.3.0"
-    uxcore-collapse "2.1.1"
-    uxcore-const "0.0.3"
-    uxcore-crumb "0.2.4"
-    uxcore-dialog "0.7.12"
-    uxcore-dropdown "0.4.3"
-    uxcore-empty-data "0.1.5"
-    uxcore-float-nav "0.3.0"
-    uxcore-form "6.3.1"
-    uxcore-form-field "0.2.36"
-    uxcore-formatter "0.1.10"
-    uxcore-grid "1.3.0"
-    uxcore-icon "0.1.19"
-    uxcore-layout "1.0.8"
-    uxcore-load-more "0.1.3"
-    uxcore-matrix "0.3.1"
-    uxcore-mention "0.3.17"
-    uxcore-menu "3.0.1"
-    uxcore-message "0.5.3"
-    uxcore-multi-select "0.4.7"
-    uxcore-pagination "0.6.3"
-    uxcore-pickable "3.1.2"
-    uxcore-pickable-form-field "0.4.3"
-    uxcore-popover "0.5.4"
-    uxcore-progress "1.1.5"
-    uxcore-radiogroup "1.3.1"
-    uxcore-rate "0.3.5"
-    uxcore-select2 "0.4.22"
-    uxcore-splitter "0.1.4"
-    uxcore-steps "2.1.6"
-    uxcore-switch "0.1.8"
-    uxcore-table "8.5.0"
-    uxcore-tabs "0.6.13"
-    uxcore-tag "2.1.1"
-    uxcore-time-picker "0.1.1"
-    uxcore-timeline "0.2.3"
-    uxcore-tinymce "0.2.10"
-    uxcore-title "0.1.5"
-    uxcore-tooltip "0.4.10"
-    uxcore-totop "0.5.0"
-    uxcore-transfer "0.3.15"
-    uxcore-tree "0.3.1"
-    uxcore-tree-select "0.4.4"
-    uxcore-uploader "3.1.11"
-    uxcore-validator "0.2.4"
 
 validate-npm-package-license@^3.0.1:
   version "3.0.3"
@@ -8798,7 +7377,7 @@ vue-template-es2015-compiler@^1.4.2:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.6.0.tgz#dc42697133302ce3017524356a6c61b7b69b4a18"
 
-warning@2.x, warning@^2.0.0:
+warning@2.x:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/warning/-/warning-2.1.0.tgz#21220d9c63afc77a8c92111e011af705ce0c6901"
   dependencies:

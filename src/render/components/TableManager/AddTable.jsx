@@ -1,14 +1,16 @@
 import React from 'react'
 import {observable} from 'mobx'
 import {observer} from 'mobx-react'
-import {Button, Tabs} from "antd";
+import {Button, Input, Select, Tabs, message} from "antd";
 import {ipcRenderer, remote} from "electron"
-import {ADD_EXCEL_FILE, ADD_EXCEL_FILE_RETURN} from "src/common/channel";
+import {ADD_EXCEL_FILE, ADD_EXCEL_FILE_RETURN, SAVE_TABLE, SAVE_TABLE_RETURN} from "src/common/channel";
 import ModalLoading from "src/render/components/ModalLoading"
 import ReactTable from 'react-table'
 import ScrollArea from "react-scrollbar";
 
 const {TabPane} = Tabs;
+
+const store = window.store;
 
 export default observer(class AddTable extends React.Component {
 
@@ -23,6 +25,7 @@ export default observer(class AddTable extends React.Component {
       tableName: "",
       tableData: [],
       tableColumns: [],
+      tableClass: '未分类',
     });
 
     this.addFile = () => {
@@ -53,7 +56,7 @@ export default observer(class AddTable extends React.Component {
     ipcRenderer.on(ADD_EXCEL_FILE_RETURN, (e, resp) => {
       this.selfState.handling = false;
       if (resp.err) {
-        window.alert(resp.err);
+        message.error(resp.err);
         return;
       }
       const {data, name, columns} = resp;
@@ -67,6 +70,26 @@ export default observer(class AddTable extends React.Component {
         this.selfState.selectedFile = "";
       }
     };
+
+    this.saveTable = () => {
+      if (window.confirm(`保存表格"${this.selfState.tableName}"（${this.selfState.tableClass}）？`)) {
+        this.selfState.handling = true;
+        ipcRenderer.send(SAVE_TABLE, this.selfState.tableName, this.selfState.tableClass);
+      }
+    };
+
+    ipcRenderer.on(SAVE_TABLE_RETURN, resp => {
+      this.selfState.handling = false;
+      if (resp.err) {
+        message.error(resp.err);
+      } else {
+        message.success("保存成功！");
+        this.selfState.tableName = '';
+        this.selfState.tableData = [];
+        this.selfState.tableColumns = [];
+        this.selfState.tableClass = '未分类';
+      }
+    })
   }
 
   render() {
@@ -108,7 +131,27 @@ export default observer(class AddTable extends React.Component {
                     )
                     : null
                 }
-
+                <div style={{display: "flex", justifyContent: "space-between", width: "100%"}}>
+                  <Input addonBefore={"表名"} value={this.selfState.tableName}
+                         onChange={e => this.selfState.tableName = e.target.value}/>
+                  <Select defaultValue="未分类" onChange={v => this.selfState.tableClass = v}>
+                    {
+                      store.classes.map((c, i) => (
+                        <Select.Option value={c.name} key={i}>{c.name}</Select.Option>
+                      ))
+                    }
+                    <Select.Option value="未分类">未分类</Select.Option>
+                  </Select>
+                </div>
+                <div style={{display: "flex", justifyContent: "space-between", alignItems: "center", width: "100%"}}>
+                  <div style={{paddingLeft: "1em"}}><span>预览</span></div>
+                  <Button type="primary" onClick={this.saveTable}
+                          disabled={this.selfState.tableName.length === 0
+                          || this.selfState.tableData.length === 0
+                          || this.selfState.tableColumns.length === 0
+                          || store.tables.findIndex(t => t === this.selfState.tableName) !== -1}
+                  >保存</Button>
+                </div>
                 <ReactTable
                   data={this.selfState.tableData.slice()}
                   columns={this.selfState.tableColumns.slice()}
@@ -143,7 +186,7 @@ export default observer(class AddTable extends React.Component {
         if (ps.length > 0 && (ps[ps.length - 1].toLowerCase() === "xlsx" || ps[ps.length - 1].toLowerCase() === "xls")) {
           this.selfState.selectedFile = f.path;
         } else {
-          alert("不是合法的EXCEL表格文件");
+          message.error("不是合法的EXCEL表格文件");
         }
         return;
       }
