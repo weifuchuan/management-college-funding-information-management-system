@@ -1,21 +1,55 @@
-import {observable} from 'mobx'
-import {ipcRenderer} from "electron";
-import {GET_CLASSES, GET_CLASSES_RETURN} from "src/common/channel";
+import {
+  observable
+} from 'mobx'
+import {
+  ipcRenderer
+} from "electron";
+import {
+  GET_CLASSES,
+  GET_CLASSES_RETURN
+} from "src/common/channel";
 import _ from "lodash"
 
 const store = observable({
   classes: [],
   tables: [],
-
+  specificTables: [],
+  goTableState: {
+    forceUpdateTableComponent: false,
+    shouldVisitTable: '',
+  },
   get otherTables() {
-    return _.difference(this.tables, _.flatMap(this.classes, c => c.tables));
+    const set = new Set();
+    this.classes.forEach(c => {
+      c.tables.forEach(t => {
+        set.add(t);
+      })
+    });
+    return this.tables.filter(t => !set.has(t));
+  },
+  get tableToClass() {
+    const map = new Map();
+    this.classes.forEach(c => {
+      c.tables.forEach(t => {
+        map.set(t, c);
+      });
+    });
+    return map; 
   }
 });
 
 ipcRenderer.send(GET_CLASSES);
-ipcRenderer.on(GET_CLASSES_RETURN, (event, {classes, tables}) => {
-  store.classes = observable.array(classes);
-  store.tables = observable.array(tables);
+ipcRenderer.on(GET_CLASSES_RETURN, (event, {
+  classes,
+  tables,
+  specificTables
+}) => {
+  store.classes.clear();
+  store.classes.push(...classes.map(c => observable(c)));
+  store.tables.clear();
+  store.tables.push(...tables);
+  store.specificTables.clear();
+  store.specificTables.push(...specificTables);
 });
 
 window.store = store;

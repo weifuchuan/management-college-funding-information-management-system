@@ -6,6 +6,7 @@ import {ipcRenderer, remote} from "electron"
 import {ADD_EXCEL_FILE, ADD_EXCEL_FILE_RETURN, SAVE_TABLE, SAVE_TABLE_RETURN} from "src/common/channel";
 import ModalLoading from "src/render/components/ModalLoading"
 import ReactTable from 'react-table'
+import _ from 'lodash';
 import ScrollArea from "react-scrollbar";
 
 const {TabPane} = Tabs;
@@ -72,18 +73,24 @@ export default observer(class AddTable extends React.Component {
     };
 
     this.saveTable = () => {
+      if (-1 !== store.specificTables.indexOf(this.selfState.tableName)) {
+        window.alert(`表名与特定表格冲突：${store.specificTables}`);
+        return;
+      }
       if (window.confirm(`保存表格"${this.selfState.tableName}"（${this.selfState.tableClass}）？`)) {
         this.selfState.handling = true;
         ipcRenderer.send(SAVE_TABLE, this.selfState.tableName, this.selfState.tableClass);
       }
     };
 
-    ipcRenderer.on(SAVE_TABLE_RETURN, resp => {
+    this.saveSuccess = _.debounce(() => message.success("保存成功！"), 500);
+
+    ipcRenderer.on(SAVE_TABLE_RETURN, (e, resp) => {
       this.selfState.handling = false;
       if (resp.err) {
         message.error(resp.err);
       } else {
-        message.success("保存成功！");
+        this.saveSuccess();
         this.selfState.tableName = '';
         this.selfState.tableData = [];
         this.selfState.tableColumns = [];
@@ -133,7 +140,9 @@ export default observer(class AddTable extends React.Component {
                 }
                 <div style={{display: "flex", justifyContent: "space-between", width: "100%"}}>
                   <Input addonBefore={"表名"} value={this.selfState.tableName}
-                         onChange={e => this.selfState.tableName = e.target.value}/>
+                         onChange={e => {
+                           this.selfState.tableName = e.target.value;
+                         }}/>
                   <Select defaultValue="未分类" onChange={v => this.selfState.tableClass = v}>
                     {
                       store.classes.map((c, i) => (

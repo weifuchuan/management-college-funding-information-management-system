@@ -5,6 +5,9 @@ import {Button, Icon, Layout, Menu} from "antd";
 import ScrollArea from "react-scrollbar";
 import {Route, Control} from "react-keeper"
 import AddTable from "./AddTable";
+import ClassManager from './ClassManager'
+import _ from "lodash";
+import Table from './Table'
 
 const {Sider, Content} = Layout;
 const {SubMenu} = Menu;
@@ -20,9 +23,13 @@ export default observer(class TableManager extends React.Component {
       currentTable: "",
     });
 
-    this.selectTable = table => {
-      this.selfState.currentTable = table;
-    };
+    this.selectTable = _.debounce(({key}) => {
+      store.goTableState = {
+        forceUpdateTableComponent: true,
+        shouldVisitTable: key,
+      };
+      Control.go(`/manager/table`);
+    }, 300);
   }
 
   render() {
@@ -37,15 +44,16 @@ export default observer(class TableManager extends React.Component {
                 mode="inline"
                 style={{borderRight: 0}}
                 theme={"dark"}
+                onSelect={this.selectTable}
               >
                 {
                   store.classes.map((item) => {
                     return (
                       <SubMenu key={item.name} title={<span>{item.name}</span>}>
                         {
-                          item.tables.map((subc) => {
+                          item.tables.map((t) => {
                             return (
-                              <Menu.Item key={subc} onClick={this.selectTable}>{subc}</Menu.Item>
+                              <Menu.Item key={t}>{t}</Menu.Item>
                             )
                           })
                         }
@@ -66,15 +74,24 @@ export default observer(class TableManager extends React.Component {
               </Menu>
             </ScrollArea>
             <Button style={{backgroundColor: "#121b4b"}} type={"primary"} onClick={() => {
-              Control.go("/manager/add-table")
+              if (_.reduce(Control.path, (cnt, c) => c === '/' ? cnt + 1 : cnt, 0) >= 2)
+                Control.replace(`/manager/add-table`);
+              else
+                Control.go(`/manager/add-table`)
             }}>新增表格</Button>
             <Button style={{backgroundColor: "#121b4b"}} type={"primary"} onClick={() => {
+              if (_.reduce(Control.path, (cnt, c) => c === '/' ? cnt + 1 : cnt, 0) >= 2)
+                Control.replace(`/manager/class-manager`);
+              else
+                Control.go(`/manager/class-manager`)
             }}>分类管理</Button>
           </div>
         </Sider>
         <Layout>
           <Content style={{background: '#fff', padding: 24, margin: 0, minHeight: 280, display: "flex"}}>
             <Route cache path={"/add-table"} component={AddTable}/>
+            <Route cache path={"/class-manager"} component={ClassManager}/>
+            <Route path={"/table"} component={Table}/>
           </Content>
         </Layout>
       </Layout>

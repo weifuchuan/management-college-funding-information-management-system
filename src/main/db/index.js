@@ -33,6 +33,15 @@ app.on("will-quit", () => {
   }
 });
 
+app.on('browser-window-blur', () => {
+  console.log("window blur, save database");
+  try {
+    fs.writeFileSync(dbFilePath, new Buffer(db.export()));
+  } catch (err) {
+    console.error(err);
+  }
+});
+
 const low = require('lowdb');
 const FileSync = require('lowdb/adapters/FileSync');
 
@@ -42,8 +51,7 @@ const ddb = low(adapter);
 ddb.defaults({
   classes: [/* {name: "国家资助", tables: ["国家奖学金", "国家助学金"]} */],
   tables: [/* "国家奖学金" */],
-
-
+  specificTables: ["国家励志奖学金", `国家助学金`, `国家生源地助学贷款`, `建档立卡_国家资助`, `食堂补贴`, `寒假回家路费`, `助育兼容促双创学生奖励`, `精进助学金`, `真维斯助学金`, `国酒茅台助学金`],
 }).write();
 
 

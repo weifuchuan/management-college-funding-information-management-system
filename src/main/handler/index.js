@@ -1,9 +1,21 @@
 import XLSX from 'xlsx'
 import path from "path"
 import {db, ddb} from 'src/main/db';
-import {GET_CLASSES_RETURN, ADD_EXCEL_FILE_RETURN, SAVE_TABLE_RETURN} from 'src/common/channel';
+import {
+  GET_CLASSES_RETURN,
+  ADD_EXCEL_FILE_RETURN,
+  SAVE_TABLE_RETURN,
+  SAVE_CLASS_CHANGE_RETURN,
+  GET_TABLE_DATA_RETURN
+} from 'src/common/channel';
 import {observable} from 'mobx';
 import sql from 'sql';
+import LRU from "lru-cache"
+
+const cache = LRU({
+  max: 20,
+  maxAge: 1000 * 60 * 10,
+});
 
 sql.setDialect('sqlite');
 const store = new Map();
@@ -14,7 +26,8 @@ const intRegExp = /^[0-9]+$/;
 export function getClasses(e) {
   const classes = ddb.get("classes").value();
   const tables = ddb.get("tables").value();
-  e.sender.send(GET_CLASSES_RETURN, {classes, tables});
+  const specificTables = ddb.get("specificTables").value();
+  e.sender.send(GET_CLASSES_RETURN, {classes, tables, specificTables});
 }
 
 export function addExcelFile(e, filePath) {
@@ -31,7 +44,7 @@ export function addExcelFile(e, filePath) {
     columns.push(key);
     let isNumber = true;
     for (let row of data) {
-      if (!numberRegExp.test(row[key])) {
+      if (!numberRegExp.test(row[key].trim())) {
         isNumber = false;
         break;
       }
@@ -42,7 +55,7 @@ export function addExcelFile(e, filePath) {
   }
   data = data.map(row => {
     for (let c of columnsOfNumber) {
-      if (intRegExp.test(row[c])) {
+      if (intRegExp.test(row[c].trim())) {
         row[c] = Number.parseInt(row[c]);
       } else {
         row[c] = Number.parseFloat(row[c]);
@@ -65,7 +78,7 @@ export function saveTable(e, name, theClass) {
       }
     }),
   });
-  const createSql = table.create().ifNotExists().toString();
+  const createSql = table.create().toString();
   try {
     db.run(createSql);
     ddb.get("tables").push(name).write();
@@ -84,4 +97,44 @@ export function saveTable(e, name, theClass) {
     console.error(err);
     e.sender.send(SAVE_TABLE_RETURN, {err: "创建表失败: " + err.toString(), createOk: false});
   }
+}
+
+export function saveClassChange(e, {classes}) {
+  ddb.set("classes", classes).write();
+  e.sender.send(SAVE_CLASS_CHANGE_RETURN, {ok: true});
+}
+
+export function getTableData(e, table) {
+  const c = cache.get(`getTableData:${table}`);
+  if (c) {
+    e.sender.send(GET_TABLE_DATA_RETURN, c);
+    return;
+  }
+  try {
+    const result = db.exec(`select * from "${table}"`);
+    if (result.length > 0) {
+      const raw = result[0];
+      const columns = raw["columns"];
+      const values = raw["values"];
+      const data = values.map(v => {
+        const row = {};
+        for (let i = 0; i < columns.length; i++) {
+          row[columns[i]] = v[i];
+        }
+        return row;
+      });
+      cache.set(`getTableData:${table}`, {columns, data});
+      e.sender.send(GET_TABLE_DATA_RETURN, {columns, data});
+    } else {
+      e.sender.send(GET_TABLE_DATA_RETURN, {err: "没有找到数据"});
+    }
+  } catch (err) {
+    console.error(err);
+    e.sender.send(GET_TABLE_DATA_RETURN, {err: err.toString()});
+  }
+}
+
+export function saveTableNameChange(e, {classes, tables}) {
+  ddb.set("classes", classes).write();
+  ddb.set("tables", tables).write();
 }
