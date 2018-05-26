@@ -13,8 +13,11 @@ export const SAVE_CLASS_CHANGE_RETURN = "saveClassChangeReturn"; // {ok: Bool}
 export const GET_TABLE_DATA = "getTableData"; // table: String
 export const GET_TABLE_DATA_RETURN = "getTableDataReturn"; // {err?, columns:[String], data:[Row]}
 
-export const SAVE_TABLE_NAME_CHANGE = 'saveTableNameChange'; // {classes, tables, newName, oldName}
+export const SAVE_TABLE_NAME_CHANGE = 'saveTableNameChange'; // {newName, oldName}
 export const SAVE_TABLE_NAME_CHANGE_RETURN = 'saveTableNameChangeReturn'; // {ok: Bool}
 
-export const SAVE_TABLE_DATA_CHANGE = "saveTableDataChange"; // {data, columns}
+export const SAVE_TABLE_DATA_CHANGE = "saveTableDataChange"; // {data, columns, table}
 export const SAVE_TABLE_DATA_CHANGE_RETURN = "saveTableDataChangeReturn"; // {ok: Bool, err?}
+
+export const DELETE_TABLE = "deleteTable"; // table
+export const DELETE_TABLE_RETURN = "deleteTableReturn"; // {ok: Bool, err?}

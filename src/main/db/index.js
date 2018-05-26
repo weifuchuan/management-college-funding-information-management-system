@@ -4,7 +4,7 @@ import fs from "fs"
 import path from 'path';
 import initSql from './sql'
 
-const dbFilePath = path.join(__dirname, "db.sqlite");
+const dbFilePath = "db.sqlite";//path.join(__dirname, "db.sqlite");
 
 let db;
 

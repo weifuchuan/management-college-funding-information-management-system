@@ -7,11 +7,14 @@ import {
   SAVE_TABLE_RETURN,
   SAVE_CLASS_CHANGE_RETURN,
   GET_TABLE_DATA_RETURN,
-  SAVE_TABLE_NAME_CHANGE_RETURN
+  SAVE_TABLE_NAME_CHANGE_RETURN,
+  DELETE_TABLE_RETURN
 } from 'src/common/channel';
 import {observable} from 'mobx';
 import sql from 'sql';
 import LRU from "lru-cache"
+import _ from 'lodash'
+import {SAVE_TABLE_DATA_CHANGE_RETURN} from "../../common/channel";
 
 const cache = LRU({
   max: 20,
@@ -90,6 +93,7 @@ export function saveTable(e, name, theClass) {
     try {
       db.run(insertSql);
       e.sender.send(SAVE_TABLE_RETURN, {createOk: true, insertOk: true});
+      saveDatabase();
     } catch (err) {
       console.error(err);
       e.sender.send(SAVE_TABLE_RETURN, {err: "数据插入失败", createOk: true, insertOk: false});
@@ -98,7 +102,6 @@ export function saveTable(e, name, theClass) {
     console.error(err);
     e.sender.send(SAVE_TABLE_RETURN, {err: "创建表失败: " + err.toString(), createOk: false});
   }
-  saveDatabase();
 }
 
 export function saveClassChange(e, {classes}) {
@@ -136,18 +139,69 @@ export function getTableData(e, table) {
   }
 }
 
-export function saveTableNameChange(e, {classes, tables, oldName, newName}) {
+export function saveTableNameChange(e, {oldName, newName}) {
   try {
     db.exec(`ALTER TABLE "${oldName.trim()}" RENAME TO "${newName.trim()}"`);
+    const classes = ddb.get("classes").value();
+    const tables = ddb.get("tables").value();
+    for (let i = 0; i < classes.length; i++) {
+      let j;
+      if ((j = classes[i].tables.findIndex((t) => t === oldName)) !== -1) {
+        classes[i].tables[j] = newName;
+        break;
+      }
+    }
+    const i = tables.findIndex((t) => t === oldName);
+    if (i !== -1) {
+      tables[i] = newName;
+    }
     ddb.set("classes", classes).write();
     ddb.set("tables", tables).write();
     e.sender.send(SAVE_TABLE_NAME_CHANGE_RETURN, {ok: true});
+    saveDatabase();
   } catch (err) {
     console.error(err);
     e.sender.send(SAVE_TABLE_NAME_CHANGE_RETURN, {ok: false, err: err.toString()});
   }
 }
 
-export function saveTableDataChange(e, {data, columns}) {
+export function saveTableDataChange(e, {data, columns, table}) {
+  try {
+    db.run(`delete from "${table}"`);
+    const tableD = sql.define({
+      name: table,
+      columns: columns.map(c => {
+        return {
+          name: c,
+          dataType: '  ',
+        }
+      }),
+    });
+    const insertSql = tableD.insert(data).toString();
+    try {
+      db.run(insertSql);
+      e.sender.send(SAVE_TABLE_DATA_CHANGE_RETURN, {ok: true});
+      cache.set(`getTableData:${table}`, {columns, data});
+      saveDatabase();
+    } catch (err) {
+      console.error(err);
+      e.sender.send(SAVE_TABLE_DATA_CHANGE_RETURN, {err: err.toString(), ok: false});
+    }
+  } catch (err) {
+    console.error(err);
+    e.sender.send(SAVE_TABLE_DATA_CHANGE_RETURN, {err: err.toString(), ok: false});
+  }
+}
 
+export function deleteTable(e, table) {
+  try {
+    db.run(`drop table "${table.trim()}"`);
+    ddb.get("tables").remove(t => t === table).write();
+    const cls = ddb.get("classes").find(c => c.tables.findIndex(t => t === table) !== -1);
+    if (cls.value())
+      cls.get("tables").remove(t => t === table).write();
+    e.sender.send(DELETE_TABLE_RETURN, {ok: true});
+  } catch (err) {
+    e.sender.send(DELETE_TABLE_RETURN, {ok: false, err: err.toString()})
+  }
 }
