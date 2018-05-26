@@ -24,22 +24,22 @@ try {
 
 db.run(initSql);
 
-app.on("will-quit", () => {
-  console.log("will quit, save database");
+export function saveDatabase(){
   try {
     fs.writeFileSync(dbFilePath, new Buffer(db.export()));
   } catch (err) {
     console.error(err);
   }
+}
+
+app.on("will-quit", () => {
+  console.log("will quit, save database");
+  saveDatabase()
 });
 
 app.on('browser-window-blur', () => {
   console.log("window blur, save database");
-  try {
-    fs.writeFileSync(dbFilePath, new Buffer(db.export()));
-  } catch (err) {
-    console.error(err);
-  }
+  saveDatabase()
 });
 
 const low = require('lowdb');

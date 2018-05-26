@@ -1274,6 +1274,10 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
+bootstrap@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.1.tgz#3aec85000fa619085da8d2e4983dfd67cf2114cb"
+
 boxen@^1.2.1:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/boxen/-/boxen-1.3.0.tgz#55c6c39a8ba58d9c61ad22cd877532deb665a20b"
@@ -5908,6 +5912,10 @@ rc@^1.0.1, rc@^1.1.2, rc@^1.1.6, rc@^1.2.1:
 rcedit@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/rcedit/-/rcedit-1.1.0.tgz#ae21c28d4efdd78e95fcab7309a5dd084920b16a"
+
+react-data-grid@^4.0.7:
+  version "4.0.7"
+  resolved "https://registry.yarnpkg.com/react-data-grid/-/react-data-grid-4.0.7.tgz#ef44f4c8d22773ee3fc1278ae2cb9e69c75c62b0"
 
 react-dom@^16.3.2:
   version "16.3.2"

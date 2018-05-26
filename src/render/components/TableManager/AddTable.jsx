@@ -143,7 +143,7 @@ export default observer(class AddTable extends React.Component {
                          onChange={e => {
                            this.selfState.tableName = e.target.value;
                          }}/>
-                  <Select defaultValue="未分类" onChange={v => this.selfState.tableClass = v}>
+                  <Select defaultValue="未分类" onChange={v => console.log(this.selfState.tableClass = v)}>
                     {
                       store.classes.map((c, i) => (
                         <Select.Option value={c.name} key={i}>{c.name}</Select.Option>

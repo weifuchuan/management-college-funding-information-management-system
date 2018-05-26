@@ -1,12 +1,13 @@
 import XLSX from 'xlsx'
 import path from "path"
-import {db, ddb} from 'src/main/db';
+import {db, ddb, saveDatabase} from 'src/main/db';
 import {
   GET_CLASSES_RETURN,
   ADD_EXCEL_FILE_RETURN,
   SAVE_TABLE_RETURN,
   SAVE_CLASS_CHANGE_RETURN,
-  GET_TABLE_DATA_RETURN
+  GET_TABLE_DATA_RETURN,
+  SAVE_TABLE_NAME_CHANGE_RETURN
 } from 'src/common/channel';
 import {observable} from 'mobx';
 import sql from 'sql';
@@ -83,7 +84,7 @@ export function saveTable(e, name, theClass) {
     db.run(createSql);
     ddb.get("tables").push(name).write();
     if (theClass !== '未分类')
-      ddb.get("classes").find(c => c.name === theClass).push(name).write();
+      ddb.get("classes").find(c => c.name === theClass).get('tables').push(name).write();
     getClasses(e);
     const insertSql = table.insert(data).toString();
     try {
@@ -97,6 +98,7 @@ export function saveTable(e, name, theClass) {
     console.error(err);
     e.sender.send(SAVE_TABLE_RETURN, {err: "创建表失败: " + err.toString(), createOk: false});
   }
+  saveDatabase();
 }
 
 export function saveClassChange(e, {classes}) {
@@ -134,7 +136,18 @@ export function getTableData(e, table) {
   }
 }
 
-export function saveTableNameChange(e, {classes, tables}) {
-  ddb.set("classes", classes).write();
-  ddb.set("tables", tables).write();
+export function saveTableNameChange(e, {classes, tables, oldName, newName}) {
+  try {
+    db.exec(`ALTER TABLE "${oldName.trim()}" RENAME TO "${newName.trim()}"`);
+    ddb.set("classes", classes).write();
+    ddb.set("tables", tables).write();
+    e.sender.send(SAVE_TABLE_NAME_CHANGE_RETURN, {ok: true});
+  } catch (err) {
+    console.error(err);
+    e.sender.send(SAVE_TABLE_NAME_CHANGE_RETURN, {ok: false, err: err.toString()});
+  }
+}
+
+export function saveTableDataChange(e, {data, columns}) {
+
 }
